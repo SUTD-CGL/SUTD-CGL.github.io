@@ -242,7 +242,7 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
 }
 
 .section {
-  padding: 100px 0;
+  padding: 30px 0;
 }
 
 .section-sm {
@@ -283,7 +283,8 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
 }
 
 .page-title {
-  padding: 100px 0;
+
+  padding: 30px 0;
 }
 
 .page-title .block {
@@ -321,9 +322,28 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
   font-weight: 300;
 }
 
-.page-wrapper {
-  padding: 70px 0;
+.thumbnail {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  -ms-transition: none !important;
+  transition: none !important;
 }
+
+.thumbnail .caption {
+  padding: 9px;
+  color: #333333;
+}
+
+.page-wrapper {
+  padding: 30px 0;
+}
+
+.research-img image{
+  width: 10px;
+  height: auto;
+}
+
 
 .social-media-icons ul li {
   display: inline-block;
@@ -1092,7 +1112,7 @@ font header .navbar-default .navbar-nav li a:hover {
 }
 
 .contact-form {
-  padding-top: 70px;
+  padding-top: 5px;
   padding-bottom: 35px;
 }
 
@@ -2228,8 +2248,9 @@ font header .navbar-default .navbar-nav li a:hover {
 }
 
 #publicationSUTD img {
-  width: auto;
-  height: 200px;
+  width: 300px;
+  height: auto;
+  padding: 0px 30px 0px 0px;
 }
 
 .post .post-media.post-media-audio iframe {
@@ -2237,8 +2258,8 @@ font header .navbar-default .navbar-nav li a:hover {
 }
 
 .post .post-title {
-  margin-top: 10px;
-  margin: 25px 0 0;
+  margin-top: 5px;
+  margin: 15px 0 0;
   text-transform: uppercase;
 }
 
@@ -2276,7 +2297,7 @@ font header .navbar-default .navbar-nav li a:hover {
 }
 
 .post .post-content {
-  margin-top: 20px;
+  margin-top: 5px;
 }
 
 .post .post-content p {
@@ -2720,8 +2741,8 @@ font header .navbar-default .navbar-nav li a:hover {
 .footer {
   background: #F5F5F5;
   text-align: center;
-  padding-top: 48px;
-  padding-bottom: 55px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .footer p {

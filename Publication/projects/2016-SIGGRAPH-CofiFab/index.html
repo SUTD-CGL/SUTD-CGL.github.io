@@ -1,0 +1,228 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0092)http://vis.uky.edu/~gravity/Research/ResidentialReconstruction/ResidentialReconstruction.htm -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>CofiFab: Coarse-to-Fine Fabrication of Large 3D Objects</title>
+<link href="./images/external.css" rel="stylesheet" type="text/css">
+</head>
+
+
+<body>
+
+<div id="wrapper">
+        <div id="content"> 
+          	
+          <!-- Title & Authors-->
+          <br><br>
+       	  <p class="title">CofiFab: Coarse-to-Fine Fabrication of Large 3D Objects</p>
+       	  <p>&nbsp;</p>
+          
+          <p class="authors">
+          <a href="https://songpenghit.github.io">Peng Song</a><sup>1</sup>&nbsp&nbsp
+          <a href="http://www.bdeng.me">Bailin Deng</a><sup>2</sup>&nbsp&nbsp 
+          Ziqi Wang<sup>1</sup>&nbsp&nbsp
+          Zhichao Dong<sup>1</sup>&nbsp&nbsp
+          Wei Li<sup>1</sup>&nbsp&nbsp
+          <a href="http://www.cse.cuhk.edu.hk/~cwfu/">Chi-Wing Fu</a><sup>3</sup>&nbsp&nbsp and
+          <a href="http://staff.ustc.edu.cn/~lgliu/">Ligang Liu</a><sup>1</sup>
+          <br><br>
+          <sup>1</sup> <a href="http://en.ustc.edu.cn/">University of Science and Technology of China</a> &nbsp&nbsp&nbsp&nbsp
+          <sup>2</sup> <a href="http://www2.hull.ac.uk/">University of Hull</a> &nbsp&nbsp&nbsp&nbsp
+          <sup>3</sup> <a href="http://www.cuhk.edu.hk/english/index.html">The Chinese University of Hong Kong</a> <br><br>
+          <strong><a href="http://s2016.siggraph.org/">SIGGRAPH 2016</a>, technical paper, 35(4), Article No. 45</strong></p>
+       	  <p class="authors">&nbsp;</p>
+       	  
+       	  <!-- Figure 1: Overview-->
+       	  <br><br>
+       	  <div align="center">
+          <img src="./images/Teaser.jpg" width="920" alt="Figure 1">
+          </div>
+          <p class="figure"><strong>Figure 1:</strong>CofiFab is a novel coarse-to-fine 3D fabrication technique, cost-effectively combining 3D printing and 2D 
+          laser cutting for supporting fabrication of large 3D objects. Given the input MAX PLANCK model, CofiFab generates a coarse shape proxy with two internal 
+          polyhedral bases (a) and an external shell (b) with thin pieces. Each internal base (c), produced by laser cutting, is assembled with a well-designed 
+          interlocking joints network. The external shell, realized by 3D printing, is then attached piece by piece to the internal bases with 3D-printed screws 
+          and bolts (d). The final fabricated object is around 24 inches tall (e). A mug is put beside the object as a size reference. </p>
+          
+          <!-- Abstract -->
+          <p class="text"><strong>Abstract</strong></p>
+          <p class="text">
+          This paper presents CofiFab, a coarse-to-fine 3D fabrication solution, which combines 3D printing and 2D laser cutting for cost-effective fabrication of 
+          large objects at lower cost and higher speed. Our key approach is to first build coarse internal base structures within the given 3D object using laser-cutting, 
+          and then attach thin 3D-printed parts, as an external shell, onto the base to recover the fine surface details. CofiFab achieves this with three novel 
+          algorithmic components. First, we formulate an optimization model to compute fabricatable polyhedrons of maximized volume, as the geometry of the internal base. 
+          Second, we devise a new interlocking scheme to tightly connect laser-cut parts into a strong internal base, by iteratively building a network of nonorthogonal 
+          interlocking joints and locking parts around polyhedral corners. Lastly, we also optimize the partitioning of the external object shell into 3D-printable parts, 
+          while saving support material and avoiding overhangs. These components also consider aesthetics, stability and balancing in addition to cost saving. As a result, 
+          CofiFab can efficiently produce large objects by assembly. To evaluate its effectiveness, we fabricate objects of varying shapes and sizes, where CofiFab 
+          significantly improves compared to previous methods.</p>
+          
+          <!-- Press Coverage -->
+          <p class="text">&nbsp;</p>
+          <p class="text"><strong>Press Coverage</strong><br>
+          <a href="http://www.fastcodesign.com/3062128/16-wild-research-experiments-that-could-change-design">fastcodesign: 16 Wild Research Experiments That Could Change Design</a><br>
+          <a href="http://math.ustc.edu.cn/new/En/bencandy.php?fid=31&aid=1190">USTC: Significant Progress in 3D Printing: Coarse-to-Fine Fabrication of Large Objects</a><br>
+          <a href="http://math.ustc.edu.cn/new/bencandy.php?fid=32&id=2227">中科大：“3D打印研究再获重大进展：实现快速和廉价制造大物体的技术“ </a><br>
+          <a href="http://www.aiweibang.com/yuedu/107026805.html">爱微帮：“3D打印新技术：打印物体越大越省钱”</a><br>
+          
+          <!-- Paper -->
+          <p class="text">&nbsp;</p>
+          <p class="text"><strong>Paper</strong><br>
+          <a href="./download/paper.highres.pdf">high-res PDF (~20M)</a><br>
+          <a href="./download/paper.lowres.pdf">low-res  PDF (~3M)</a><br>
+          <a href="./download/supplementary.pdf">supplementary material (~0.2M)</a><br>
+          
+          <!-- Models -->
+          <p class="text">&nbsp;</p>
+          <p class="text"><strong>Models</strong><br>
+          
+        
+          
+          <table border="0" width="900" align="center">
+          
+          <tr>
+          <td>
+          <img src="images/Model_BuddhaHead.png" width = "100" style="border: 0px gray solid"> 
+          <a href="./download/BuddahaHead.rar">Buddaha Head</a><br>
+          </td>
+          
+          <td>
+          <img src="images/Model_Celadon.png" width = "100" style="border: 0px gray solid"> 
+          <a href="./download/YueCeladon.rar">Celadon</a><br>
+          </td>
+           
+          <td>
+          <img src="images/Model_House.png" width = "100" style="border: 0px gray solid"> 
+          <a href="./download/SweetHouse.rar">House</a><br><br>  
+          </td> 
+          
+          <td>
+          <img src="images/Model_Maxplanck.png" width = "100" style="border: 0px gray solid"> 
+          <a href="./download/Maxplanck.rar">Max Planck</a><br>
+          </td>
+          
+          </tr>
+          
+          
+          <tr>
+
+          <td>
+          <img src="images/Model_Bunny.png" width = "100" style="border: 0px gray solid"> 
+          <a href="./download/Bunny.rar">Bunny</a><br>
+          </td> 
+          
+          <td>
+          <img src="images/Model_Bimba.png" width = "100" style="border: 0px gray solid"> 
+          <a href="./download/Bimba.rar">Bimba</a><br>
+          </td> 
+          
+          <td>
+          <img src="images/Model_GardenPig.png" width = "100" style="border: 0px gray solid"> 
+          <a href="./download/GardenPig.rar">Garden Pig</a><br>
+          </td> 
+          
+          <td>
+          <img src="images/Model_Kitten.png" width = "100" style="border: 0px gray solid"> 
+          <a href="./download/Kitten.rar">Kitten</a><br>                   
+          </td> 
+ 
+          </tr>
+          
+         
+          <tr>
+
+          <td>
+          <img src="images/Model_Snowman.png" width = "100" style="border: 0px gray solid"> 
+          <a href="./download/Snowman.rar">Snowman</a><br>
+          </td>
+          
+          <td>
+          <img src="images/Model_Horse.png" width = "100" style="border: 0px gray solid"> 
+          <a href="./download/Horse.rar">Horse</a><br>
+          </td>
+          
+          <td>
+          <img src="images/Model_Boat.png" width = "100" style="border: 0px gray solid"> 
+          <a href="./download/ToyBoat.rar">Toy Boat</a><br><br> 
+          </td>
+          
+          <td>
+          <img src="images/Model_Buddha.png" width = "100" style="border: 0px gray solid"> 
+          <a href="./download/Buddha.rar">Buddha</a><br>
+          </td>
+          
+ 
+          <tr>
+          <td>
+          <img src="images/Model_Squirrel.png" width = "100" style="border: 0px gray solid"> 
+          <a href="./download/Squirrel.rar">Squirrel</a><br>
+          </td>
+          
+          <td>
+          <img src="images/Model_Warrior.png" width = "60" style="border: 0px gray solid"> 
+          <a href="./download/TerraCottaWarrior.rar">Terra Cotta Warrior</a><br>
+          </td>
+           
+          </tr> 
+         
+          </table>
+          
+          <!-- Video --> 
+          <p class="text">&nbsp;</p>
+          <p class="text"><strong>Video</strong></p>
+          <!--</p>-->
+          <div id="Div3" align="center"><embed src="http://www.youtube.com/v/GyGWY5aFFMU&amp;hl=en&amp;fs=1" allowfullscreen="true" quality="high" width="720" height="480"
+          align="middle" allowscriptaccess="always" type="application/x-shockwave-flash" /></embed></div>          
+          <p class="text">&nbsp;</p>
+          
+          <!-- Images of Results -->  
+          <p class="text">&nbsp;</p>
+          <p class="text"><strong>Images</strong></p>
+          <p class="text">&nbsp;</p>
+          
+           <!--<br><br>-->
+       	  <div align="center"><img src="./images/Overview.jpg" width="900" alt="Figure 2"></div>
+          <p class="figure"><strong>Figure 2:</strong> Overview. (a) input model; (b&c) optimized results: coarse polyhedrons (internal bases) and fine 3D-printed parts 
+          (external shell); (d) interlocked laser-cut assemblies; (e) 3D-printed parts; (f) laser-cut parts; (g) assembled laser-cut bases; and (h) final assembled object.</p>
+          
+           <!--<br><br>-->
+       	  <div align="center"><img src="./images/Result_Shape.jpg" width="700" alt="Figure 2"></div>
+          <p class="figure"><strong>Figure 3:</strong> Results produced by CofiFab, from left to right: CELADON, BUDDHA HEAD, BIMBA, SQUIRREL, and BUDDHA.</p>
+                    
+          <!--<br><br>-->
+       	  <div align="center"><img src="./images/Result_Assembly.jpg" width="900" alt="Figure 3"></div>
+          <p class="figure"><strong>Figure 4:</strong> Snapshots in assembling KITTEN (top) and SNOWMAN (bottom). The key of each interlocking base is colored in red.</p>
+          
+           <!--<br><br>-->
+       	  <div align="center"><img src="./images/Result_Physical.jpg" width="700" alt="Figure 5"></div>
+          <p class="figure"><strong>Figure 5:</strong> Physical fabricated assembly: HOUSE, GARDEN PIG, and TERRA COTTA WARRIOR models (from top to bottom).</p>
+          
+        <!-- Acknowledgments -->  
+        <p class="text"><strong>Acknowledgments</strong></p>
+        <p class="text">We thank the reviewers for the valuable comments. Some of the models are provided by Thingiverse, CGTrader, dayin.la, and SCAN THE WORLD initiative.
+        This work is supported by the National Natural Science Foundation of China (61222206, 11526212, 61403357), the One Hundred Talent Project of the Chinese Academy of 
+        Sciences, and the Chinese University of Hong Kong strategic recruitment fund and direct grant (4055061).</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        
+        <!-- Bibtex -->  
+        <p class="text"><strong>Bibtex</strong><br>
+        @article {Song-2016-CofiFab,          </p>
+        <p class="text">title = {{CofiFab}: Coarse-to-Fine Fabrication of Large 3D Objects},              </p>
+        <p class="text">author = {Peng Song and Bailin Deng and Ziqi Wang and Zhichao Dong and Wei Li and Chi-Wing Fu and Ligang Liu}, </p>
+        <p class="text">journal = {ACM Transactions on Graphics (SIGGRAPH 2016)},    </p>
+        <p class="text">volume = {35},          </p>
+        <p class="text">number = {4},          </p>
+        <p class="text">note = {Article 45},   </p>
+        <p class="text">year = {2016},</p>
+        <p class="text"> }</p>
+        <p class="text">&nbsp;</p>
+        <p class="text">&nbsp;</p>
+        <p class="text">&nbsp;</p>
+        <p class="text">&nbsp;</p>
+
+        </div>
+              
+</div>
+
+
+</body></html>

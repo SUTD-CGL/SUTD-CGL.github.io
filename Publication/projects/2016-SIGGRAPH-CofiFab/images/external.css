@@ -1,0 +1,165 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html, body, ul, li, ol, p, h1, h2, h3, h4, h5, h6, form, fieldset{
+margin:0px;
+padding:0px;
+border:0px;
+}
+
+body{
+	background-color:#CCC;
+	background-image:url(../assets/images/layout/bg.jpg); 
+	background-repeat:no-repeat;
+	background-position:top;
+}
+
+
+
+
+/*  LAYOUT
+------------------------------------------------------------------------------------------*/
+#wrapper{
+	width:1000px;
+	margin:0 auto 0 auto;
+}
+
+
+/*  HEADER
+------------------------------------------------------------------------------------------*/
+#HEADER{
+	height:440px; /*  Need 2 extra pixels because of border*/
+	width:1000px;
+}
+
+#HEADER_Results{
+	height:282px; /*  Need 2 extra pixels because of border*/
+	width:1000px;
+}
+
+#HEADER_IMAGE{
+	height:250px;
+	width:1002px;
+	background-image:url(../assets/images/layout/headers/Header.jpg);
+	background-repeat:no-repeat;
+}
+
+
+/*  NAVIGATION_TOP
+------------------------------------------------------------------------------------------*/
+#Navigation_Top{
+	width:1000px;
+	height:40px;
+	background-color:#FFF;
+	border-right:#999 1px solid;
+	border-bottom:#999 1px solid;
+	border-left:#999 1px solid;
+	background-image:url(../Vis_Center_Site_NEW/assets/images/layout/NavigationBG_02.jpg);
+	background-repeat:repeat-x;
+}
+
+#Navigation_Top h1{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:16px;
+	color:#000;
+	padding:10px 0 0 20px;
+}
+
+#Navigation_Top p{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:13px;
+	color:#000;
+	padding:10px 0 0 20px;
+}
+
+
+#Navigation_Top ul{
+	padding:0;
+	margin:0;
+}
+
+#Navigation_Top ul li{
+	padding:0;
+	margin:0;
+	display:inline;
+}
+
+#Navigation_Top ul li a{
+	padding:0 25px 0 25px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:bold;
+	text-decoration:none;
+	color:#000;
+}
+
+#Navigation_Top ul li a:hover{
+	padding:0 25px 0 25px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:bold;
+	text-decoration:none;
+	text-align:center;
+	color:#900;
+}
+
+/*  FLASH HEADER
+------------------------------------------------------------------------------------------*/
+#FLASH_Header{
+	height:400px;
+	width:1002px;
+	background-color:#000;
+}
+
+/*  CONTENT
+------------------------------------------------------------------------------------------*/
+#content{
+	width:1000px;
+	overflow:auto;
+	border-right: solid 1px #999;
+	border-left: solid 1px #999;
+	background-color:#fff;
+	background-image:url(../assets/images/layout/RigthSide_GRADIENT_02.jpg);
+	background-repeat:repeat-x;
+}
+
+#content p{
+	font-family:Arial, Helvetica, sans-serif;
+	color:#000;
+}
+
+p.title{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:30px;
+	font-weight:bold;
+	text-align:center;
+	line-height:1.25em;
+}
+
+p.authors{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:18px;
+	text-align:center;
+	line-height:1.25em;
+}
+
+p.figure{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	text-align:left;
+	line-height:1.5em;
+	padding:20px 40px 40px 40px;
+}
+
+p.text{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:16px;
+	text-align:left;
+	line-height:1.5em;
+	padding:0px 40px;
+}
+
+#video{
+	margin:0px auto;
+	text-align:center;
+}

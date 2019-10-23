@@ -1,0 +1,205 @@
+
+<html><head><title>Recursive Interlocking Puzzles</title>
+
+
+<body background="./images/desktop.jpg">
+<font size="3" face="Times New Roman">
+<blockquote>
+  <p>
+  </p><center>
+  <table border="0">
+    <tbody>
+    <tr>
+      <td><a href="./images/title.jpg"><img border="0" src="./images/title.jpg"> </a>
+      </td>
+      <td width="30"></td>
+      <td width="600">
+        <h2>
+            <span style="font-size: 24pt">
+            Recursive Interlocking Puzzles</span></h2>
+        <p>
+        <a href="https://songpenghit.github.io"><span style="font-size: 16pt">Peng Song</span></a><span style="font-size: 16pt">, </span>
+        <a href="https://www.cse.cuhk.edu.hk/~cwfu/"><span style="font-size: 16pt">Chi-Wing Fu</span></a><span style="font-size: 16pt">, </span>
+        and <a href="http://www.cs.tau.ac.il/~dcor/"><span style="font-size: 16pt">Daniel Cohen-Or</span></a><span style="font-size: 16pt">
+        <br>
+            </span>
+            <br>
+         SIGGRAPH Asia 2012,
+         technical paper<br>ACM Transactions on Graphics (ACM TOG), Article No. 128, Vol. 31 No. 6, 2012.</p></td></tr></tbody></table></center>
+  <p></p>
+
+  <div align="justify">
+  <h3>Abstract</h3>
+Interlocking puzzles are very challenging geometric problems with
+the fascinating property that once we solve one by putting together
+the puzzle pieces, the puzzle pieces interlock with one another,
+preventing the assembly from falling apart. Though interlocking puzzles
+have been known for hundreds of years, very little is known about the
+governing mechanics. Thus, designing new interlocking geometries is
+basically accomplished with extensive manual effort or expensive
+exhaustive search with computers.<br />
+In this paper, we revisit the notion of interlocking in greater depth,
+and devise a formal method of the interlocking mechanics. From this, we
+can develop a constructive approach for devising new interlocking geometries
+that directly guarantees the validity of the interlocking instead of
+exhaustively testing it. In particular, we focus on an interesting subclass
+of interlocking puzzles that are recursive in the sense that the assembly
+of puzzle pieces can remain an interlocking puzzle also after sequential
+removal of pieces; there is only one specific sequence of assembling, or
+disassembling, such a puzzle. Our proposed method can allow efficient
+generation of recursive interlocking geometries of various complexities,
+and by further realizing it with LEGO bricks, we can enable the hand-built
+creation of custom puzzle games.<br><br><!-- Result1 -->
+<hr>
+</div>
+
+
+<!-- Result: Recursive Interlocking Cubes -->
+
+<div align="justify">
+
+<h3>Recursive Interlocking Cubes </h3>
+<p>
+<ol>
+
+<li>To the best of our knowledge, there are two existing recursive interlocking (a.k.a. serial interlocking) cubes designed by Stewart Coffin (an absolute master of interlocking puzzles): a <a href="http://mypuzzlecollection.blogspot.sg/2011/12/interlock-four.html">4-piece 3x3x3 cube</a>,
+a <a href="http://www.johnrausch.com/puzzleworld/puz/convolution.htm">7-piece 4x4x4 cube</a>, and a <a href="http://www.puzzlemad.co.uk/2011/07/stewart-coffins-involute-from-wood.html">8-piece 4x4x4 cube</a> called Involute (but not balanced).
+<li>By our novel method, we, <strong>for the first time</strong>, can generate <b>balanced</b> <strong>8-piece 4x4x4 cubes </strong> (each puzzle piece is made up of extactly 8 voxel cubes) and <strong>13-piece 5x5x5 cubes </strong> (each puzzle piece is made up of either 9 or 10 voxel cubes).
+<li>Please acknowledge this paper if you would like to make and show these cubes for personal use and <strong>contact us</strong> if you are interested in making toys from them.
+</ol>
+</p>
+&nbsp &nbsp &nbsp &nbsp
+<a href="./images/Cubes_3x3x3_K4.jpg"><img border="0" src="./images/Cubes_3x3x3_K4_low.jpg"></a>
+<BR><BR>
+&nbsp &nbsp &nbsp &nbsp
+<a href="./images/Cubes_4x4x4_K8.jpg"><img border="0" src="./images/Cubes_4x4x4_K8_low.jpg"></a>
+<BR><BR>
+&nbsp &nbsp &nbsp &nbsp
+<a href="./images/Cubes_5x5x5_K13.jpg"><img border="0" src="./images/Cubes_5x5x5_K13_low.jpg"></a>
+<BR><BR>
+&nbsp &nbsp Note: the puzzle piece colors indicate the unique disassembly order: red (1st key), blue, yellow, ...
+<BR><BR>
+</p>
+
+
+<!-- Result: High-level Interlocking Cubes -->
+
+<h3>High-level Interlocking Cubes </h3>
+<p>
+<ol>
+
+<li>We also generated some high-level interlocking 4x4x4 and 5x5x5 cubes (note that these cubes are not recursive interlocking).
+<li>Please acknowledge this paper if you would like to make and show these cubes for personal use and <strong>contact us</strong> if you are interested in making toys from them.
+</ol>
+</p>
+&nbsp &nbsp &nbsp &nbsp
+<a href="./images/Cubes_highLevel.jpg"><img border="0" src="./images/Cubes_highLevel_low.jpg"></a>
+<BR><BR>
+&nbsp &nbsp Note: the puzzle piece colors indicate the unique disassembly order: red (1st key), blue, yellow, ...
+<BR><BR>
+</p>
+
+
+<!-- Result: Other Puzzles -->
+
+<hr>
+
+<div align="justify">
+
+<h3>Results #1: Rapid-Prototyping with LEGO bricks</h3>
+&nbsp &nbsp &nbsp &nbsp
+<a href="./images/Lego_Puzzles.jpg"><img border="0" src="./images/Lego_Puzzles_low.jpg"></a>
+<BR><BR>
+
+<h3>Results #2: Our Recursive Interlocking Puzzles from different 3D models</h3>
+&nbsp &nbsp &nbsp &nbsp
+<a href="./images/Puzzle_Results.jpg"><img border="0" src="./images/Puzzle_Results_low.jpg"></a>
+<BR><BR>
+
+<h3>Results #3: Our Puzzles: piggy coin bank (top) and isidore horse puzzle (bottom)</h3>
+&nbsp &nbsp &nbsp &nbsp
+<a href="./images/Puzzle_Disassembly.jpg"><img border="0" src="./images/Puzzle_Disassembly_low.jpg"></a>
+<BR><BR><BR>
+
+
+<!-- Video -->
+<hr>
+
+<div align="justify">
+<h3 id="video">Presentation video (with audio narration)</h3>
+&nbsp &nbsp &nbsp &nbsp
+<object width="720" height="480" border="1">
+<param name="movie" value="http://www.youtube.com/v/pAn8pIsEGKU&amp;hl=en&amp;fs=1">
+<param name="allowFullScreen" value="true">
+<param name="allowscriptaccess" value="always">
+<embed src="http://www.youtube.com/v/pAn8pIsEGKU&amp;hl=en&amp;fs=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="720" height="480">
+<!--<iframe width="720" height="480" src="http://www.youtube.com/embed/pAn8pIsEGKU&amp" frameborder="0" allowfullscreen></iframe>-->
+</object>
+<BR><BR><BR>
+
+
+<!-- Download -->
+<hr>
+
+<div align="justify">
+<h3 id="download">Downloads</h3>Click the following link to download:
+<ul>
+<li>Paper:
+  <ul>
+  <li><a href="download/paper.highres.pdf">high resolution version</a> (16MB)
+  <li><a href="download/paper.highres.pdf">low resolution version</a> (2MB)
+  <li><a href="http://dl.acm.org/citation.cfm?id=2366147">ACM Portal</a>
+  </ul>
+  <BR>
+<li>Demo: Puzzle assembly/disassembly viewer
+  <ul>
+  <li><a href="download/PuzzleViewer.rar">download</a> (236KB)
+  <li>Inside this rar file: program executable and the data of three of the above interlocking cubes
+  </ul>
+  <BR>
+</ul>
+
+
+<!-- Bibtex -->
+<hr>
+
+<div align="justify">
+<h3 id="bibtex">BibTex</h3>
+<font face="Courier New" size="2" color="#101010">
+@article{Song-2012-InterCubes,<BR>
+&nbsp;&nbsp;&nbsp;
+    author &nbsp= {Peng Song and Chi-Wing Fu and Daniel Cohen-Or},<BR>
+&nbsp;&nbsp;&nbsp;
+    title  &nbsp = {Recursive Interlocking Puzzles},<BR>
+&nbsp;&nbsp;&nbsp;
+    journal = {ACM Transactions on Graphics (SIGGRAPH Asia 2012)},<BR>
+&nbsp;&nbsp;&nbsp;
+    month &nbsp = {December},<BR>
+&nbsp;&nbsp;&nbsp;
+    year &nbsp &nbsp= {2012},<BR>
+&nbsp;&nbsp;&nbsp;
+    volume &nbsp= {31},<BR>
+&nbsp;&nbsp;&nbsp;
+    number &nbsp= {6},<BR>
+&nbsp;&nbsp;&nbsp;
+    pages  &nbsp = {128:1--128:10},<BR>
+
+}<BR><BR><BR>
+</font>
+
+
+<!-- Acknowledgments -->
+<hr>
+
+<div align="justify">
+<h3>Acknowledgments</h3>
+We thank anonymous reviewers for the various constructive comments, John Rausch of www.johnrausch.com for sharing the photos shown in one of the figure in the paper, Michael Brown for narrating the video presentation, William Lai for his help on 3D Studio Max, and William Hutama for building the LEGO puzzle. This work is supported in part by the MOE Tier-2 grant (MOE2011-T2-2-041), Singapore, and the Israel Science Foundation.
+<BR><BR>
+</div>
+
+
+</div>
+</blockquote>
+</font>
+
+</html>

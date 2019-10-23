@@ -1,0 +1,272 @@
+ <!--======================================================================
+//
+// Website: Song Peng's Homepage
+//
+// Author: Song Peng
+//
+// Date: Feb 24, 2014
+//
+==========================================================================-->
+
+<html><head><title>DESIA</title>
+
+<style>
+a:link { text-decoration: none;color: 6464FF}
+a:active { text-decoration:blink}
+a:hover { text-decoration:underline;color: 6464FF} 
+a:visited { text-decoration: none;color: 551A8B}
+</style>
+
+
+<!--------------------------------------------------------------------------------------------------->
+<!--                                       Header and Photo                                       --->
+<!--------------------------------------------------------------------------------------------------->
+    	
+<body background="./images/desktop.jpg"  style="width:1200; margin:0 auto;">
+<font size="3" face="Arial">
+<blockquote>
+  <p>
+  </p><center>
+  <table border="0">
+    <tbody>
+    <tr>
+      <td width="30"></td>
+      <td width="1200"><center>
+        
+        <!--Header-->
+        <br><br><br>
+        <h2><span style="font-size: 25pt">DESIA: A General Framework for Designing Interlocking Assemblies</span></h2>
+        <br>
+        
+          <p class="authors">
+          <span style="font-size: 15pt">
+          Ziqi Wang&nbsp &nbsp &nbsp &nbsp 
+          <a href="https://songpenghit.github.io">Peng Song</a>&nbsp &nbsp &nbsp &nbsp 
+          <a href="https://lgg.epfl.ch/people.php">Mark Pauly</a>&nbsp&nbsp
+    
+          <br><br>
+          <a href="https://www.epfl.ch/index.en.html">&Eacutecole Polytechnique F&eacuted&eacuterale de Lausanne</a> &nbsp&nbsp&nbsp
+          <br><br>
+
+          <strong><a href="https://sa2018.siggraph.org/en/">SIGGRAPH Asia 2018</a>, technical paper</strong>, conditionally accepted</p>
+          </span>
+       	  <p class="authors">&nbsp;</p>
+        
+        <!-- <p>
+        <a href="http://en.cs.ustc.edu.cn/"><span style="font-size: 18pt">School of Computer Science and Technology</span></a>
+        <br>
+        <br>
+        <a href="http://en.ustc.edu.cn/"><span style="font-size: 18pt">University of Science and Technology of China</span></a>
+        
+ 
+        </p>-->
+        
+        <!----Photo---->
+        <!--<div style="position: absolute; left: 1060px; top:40px;">
+        <img src="images/Photo_SongPeng.jpg" width = "350" style="border: 0px gray solid">
+        </div>-->
+        
+       </td>
+     </tr>
+     </tbody>
+  </table></center>
+  <p></p>
+
+
+<!-- Figure 1: Overview-->
+<br>
+<div align="center">
+<img src="./images/Teaser.png" width="1060" alt="Figure 1">
+</div>
+<p class="figure"><strong>Figure 1:</strong>Various interlocking assemblies designed using our framework, from left to right: voxelized puzzle, plate structure, furniture, and frame structure. Our method supports different types of joints as highlighted in the zooms. </p>
+
+<!--------------------------------------------------------------------------------------------------->
+<!--                                            Abstract                                          --->
+<!--------------------------------------------------------------------------------------------------->
+
+<br><br>
+<div align="justify" width: 1200px>
+
+<h2>Abstract</h2>
+
+<span style="font-size: 13pt">
+<!--<ul>-->
+<p>
+Interlocking assemblies have a long history in the design of puzzles,furniture, architecture, and other complex geometric structures. The keydefining property of interlocking assemblies is that all component parts areimmobilized by their geometric arrangement, preventing the assembly fromfalling apart. Computer graphics research has recently contributed designtools that allow creating new interlocking assemblies. However, these toolsfocus on specific kinds of assemblies and explore only a limited space ofinterlocking configurations, which restricts their applicability for design.
+</p>
+
+<p>In this paper, we propose a new general framework for designing interlockingassemblies. The core idea is to represent part relationships witha family of base Directional Blocking Graphs and leverage efficient graphanalysis tools to compute an interlocking arrangement of parts. This avoidsthe exponential complexity of brute-force search. Our algorithm iterativelyconstructs the geometry of assembly components, taking advantage of allexisting blocking relations when constructing successive parts. As a result,our approach supports a wider range of assembly forms compared to previousmethods and provides significantly more design flexibility. We showthat our framework facilitates efficient design of complex interlocking assemblies,including new solutions that cannot be achieved by state of theart approaches.
+</p>
+</span>
+</div>
+
+<BR><BR>
+
+
+
+
+<!--------------------------------------------------------------------------------------------------->
+<!--                                            Download                                          --->
+<!--------------------------------------------------------------------------------------------------->
+
+<hr>
+
+<div align="justify">
+
+<h2>Download </h2>
+
+<!--Click the following link to download:-->
+<span style="font-size: 13pt; line-height:32px">
+high-res PDF (coming soon)         <BR>
+low-res PDF (coming soon)               <BR>
+supplementary material (coming soon)   <BR>
+source code (coming soon)  <BR>
+</span>
+
+</div>
+
+<BR><BR>
+
+
+<!-------------------------------------------- ------------------------------------------------------->
+<!--                                             Video                                           --->
+<!--------------------------------------------------------------------------------------------------->
+
+<hr>
+
+<h2>Video </h2>
+
+<p>coming soon </p>
+       
+
+<BR><BR><BR>
+
+  <!-- Video --> 
+
+
+
+
+<!--------------------------------------------------------------------------------------------------->
+<!--                                            Results                                           --->
+<!--------------------------------------------------------------------------------------------------->
+<!--
+<hr>
+
+<div align="justify">
+
+<h2>Results </h2>
+
+<BR>
+<div align="center"><img src="./images/EMechTable.jpg" width="1060" alt="Figure 2"></div>
+<p class="figure"><strong>Figure 2:</strong> 
+Elemental mechanisms we modeled in our system. 
+Each mechanism includes a driver (blue), a follower (brown), and one or more fixed supporters (grey), for transferring motion from the driver to the follower; 
+see the equation below each mechanism, and also the red arrows next to each driver and follower. 
+We categorize the mechanisms into four groups (<strong>R</strong>, <strong>O</strong>, <strong>T</strong>, and <strong>OT</strong>) according to the motion of the driver.</p>
+<BR><BR>
+
+
+<div align="center"><img src="./images/result_models.jpg" width="1060" alt="Figure 2"></div>
+<p class="figure"><strong>Figure 3:</strong> 
+Some of the wind-up toys produced from our system;
+from left to right: Bunny, Horse, Mickey, Dragon, Tree, and House. 
+From top to bottom: input models and prescribed toy part motions, the optimized wind-up mechanisms, and the associated motion transfer trees, 
+where we color the nodes connected to the external toy parts in orange.</p>
+<BR><BR>
+
+
+<div align="center"><img src="./images/result_UserStudy.jpg" width="1060" alt="Figure 2"></div>
+<p class="figure"><strong>Figure 4:</strong> 
+Wind-up toys designed by the participants in the user evaluation and generated from our system accordingly; 
+from left to right: Box, Flower Pot, Minion, Jack O¡¯Lantern, Crab, and Gecko. 
+From top to bottom: input models and user-prescribed toy part motions, the optimized wind-up mechanisms, and the associated motion transfer trees.</p>
+<BR><BR>
+
+
+<div align="center"><img src="./images/result_fabrication.jpg" width="1060" alt="Figure 2"></div>
+<p class="figure"><strong>Figure 5:</strong> 
+Four of the six wind-up toys (top) that we have fabricated and assembled from 3D-printed parts (bottom). 
+From left to right: Bunny (13.0g shell + 7.8g motor + 9.0g mechanism), Horse (15.3g shell + 5.9g motor + 26.1g mechanism), 
+Flower Pot (34.8g shell + 5.8g motor + 8.0g mechanism), and House (48.9g shell + 6.0g motor + 6.4g mechanism).</p>
+<BR><BR>
+
+
+</div>
+
+<BR>
+-->
+
+<!--------------------------------------------------------------------------------------------------->
+<!--                                        Acknowledgments                                       --->
+<!--------------------------------------------------------------------------------------------------->
+
+<!--
+
+<hr>
+
+<div align="justify">
+
+<h2>Acknowledgments </h2>
+
+<p class="text">
+<span style="font-size: 13pt; line-height:22px">
+We thank the reviewers for the valuable comments, and 
+Thingiverse for providing 3D models of Angry Bird, Horse, Dragon, Tree, Flower Pot, Minion, and Gecko. 
+This work is supported in part
+by the National Natural Science Foundation of China (61403357, 61672482, 11626253), 
+the One Hundred Talent Project of the Chinese Academy of Sciences, 
+the Hong Kong RGC General Research Funding Project (14203416), 
+the ERC Starting Grant SmartGeometry (StG-2013-335373), and 
+gifts from Adobe.
+</p>
+</span>
+</div>
+
+<BR><BR>
+-->
+
+
+<!--------------------------------------------------------------------------------------------------->
+<!--                                        Acknowledgments                                       --->
+<!--------------------------------------------------------------------------------------------------->
+
+<!--
+
+<hr>
+
+<div align="justify">
+
+<h2>Bibtex </h2>
+<span style="font-size: 13pt; line-height:30px">
+@article {Song-2017-Wind-upToy,  <br>     
+&nbsp&nbsp&nbsp title &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp   = {Computational Design of Wind-up Toys}, <br>            
+&nbsp&nbsp&nbsp author &nbsp  = {Peng Song and Xiaofei Wang and Xiao Tang and Chi-Wing Fu and Hongfei Xu and Ligang Liu and Niloy J. Mitra}, <br>
+&nbsp&nbsp&nbsp journal &nbsp = {ACM Transactions on Graphics (SIGGRAPH Asia 2017)}, <br>  
+&nbsp&nbsp&nbsp volume  = {36}, <br>        
+&nbsp&nbsp&nbsp number  = {6}, <br>          
+&nbsp&nbsp&nbsp pages  &nbsp = {238:1 -- 238:13}, <br>
+&nbsp&nbsp&nbsp year  &nbsp&nbsp&nbsp&nbsp = {2017}} <br>
+
+</span>
+</div>
+
+<BR><BR>
+-->
+
+<!----------------------------CopyRight---------------------------->
+
+<hr>
+
+<div align="justify">
+<center>
+<!-- Copyright @ <a href="http://staff.ustc.edu.cn/~songpeng/">Peng Song</a> |  Last revised:Aug., 2018. -->
+ <!--<a href="http://www.reliablecounter.com" target="_blank"><img src="http://www.reliablecounter.com/count.php?page=staff.ustc.edu.cn/~songpeng/&digit=style/plain/10/&reloads=0" alt="" title="" border="0"></a><br /><a href="http://" target="_blank" style="font-family: Geneva, Arial; font-size: 9px; color: #330010; text-decoration: none;"></a> Visits since 2017-07-30-->
+<BR><BR>
+</div>
+
+
+</div>
+</blockquote>
+</font>
+
+</html>

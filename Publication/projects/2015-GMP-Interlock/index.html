@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0092)http://vis.uky.edu/~gravity/Research/ResidentialReconstruction/ResidentialReconstruction.htm -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Printing 3D Objects with Interlocking Parts</title>
+<link href="./images/external.css" rel="stylesheet" type="text/css">
+</head>
+
+
+<body>
+
+<div id="wrapper">
+        <div id="content"> 
+          	
+          <!-- Title & Authors-->
+          <br><br>
+       	  <p class="title"> Printing 3D Objects with Interlocking Parts</p>
+       	  <p>&nbsp;</p>
+          
+          <p class="authors">
+          <a href="https://songpenghit.github.io">Peng Song</a> &nbsp&nbsp  
+          Zhongqi Fu &nbsp&nbsp
+          <a href="http://staff.ustc.edu.cn/~lgliu/">Ligang Liu</a> &nbsp&nbsp and &nbsp
+          <a href="http://www.cse.cuhk.edu.hk/~cwfu/">Chi-Wing Fu</a><br><br>
+          <!--<sup>1</sup>University of Science and Technology of China<br>
+          <sup>2</sup>Nanyang Technological University, Singapore<br><br>-->
+          <strong>Computer Aided Geometric Design (GMP 2015)</strong></p>
+       	  <p class="authors">&nbsp;</p>
+       	  
+       	  <!-- Figure 1: Overview-->
+       	  <br><br>
+       	  <div align="center">
+          <img src="./images/Overview.jpg" width="920" alt="Figure 1">
+          </div>
+          <p class="figure"><strong>Figure 1:</strong> Overview. (a) A 3D watertight model as input; (b) voxelization and shape analysis; (c) creating initial interlocking parts; 
+          (d) attaching boundary voxels to the parts; and (e) refining the parts' geometry by CSG intersection with the input mesh model.</p>
+          
+          <!-- Abstract -->
+          <p class="text"><strong>Abstract:</strong></p>
+          <p class="text">Recent advances in 3D printing technologies bring wide range of applications from fast prototyping to product manufacturing. However, one intrinsic limitation 
+          of 3D printing is that we cannot fabricate a single object that is larger than the working volume of a 3D printer. To address this issue, we may partition the given object into 
+          3D parts of manageable sizes for printing, and then assemble the object from the printed 3D parts. Rather than using connectors, glue, or skew, we propose to connect the printed 
+          3D parts by 3D interlocking such that the assembled object can be not only repeatedly disassembled and reassembled, but also strongly connected by the parts' own geometry. 
+          To achieve these, we develop a voxelization-based approach to partition a given 3D model into 3D interlocking parts. To guarantee the generated 3D parts to be structurally sound 
+          and well-connected by 3D interlocking, we deform the local geometry of the 3D model to avoid voxel fragmentation, employ internal voxels to create initial interlocking parts, and 
+          analyze the local shape within voxels to guide the final parts construction. We demonstrate the eectiveness of our approach on 3D models with a variety of shapes, and realize some 
+          of them by 3D printing.</p>
+          
+          <!-- Paper -->
+          <p class="text">&nbsp;</p>
+          <p class="text"><strong>Paper:</strong><br>
+          High Res (9Mb)–14 pages PDF <a href="./download/2015-GMP-Interlock_high.pdf">download</a><br>
+          Low Res  (1Mb)–14 pages PDF <a href="./download/2015-GMP-Interlock_low.pdf">download </a><br>
+         
+          <!-- Video --> 
+          <p class="text">&nbsp;</p>
+          <p class="text"><strong>Video:</strong></p>
+          <!--</p>-->
+          <div id="Div1" align="center"><embed src="http://www.youtube.com/v/z4SlAfrs2DM&amp;hl=en&amp;fs=1" allowfullscreen="true" quality="high" width="720" height="480"
+          align="middle" allowscriptaccess="always" type="application/x-shockwave-flash" /></embed></div>          
+          <p class="text">&nbsp;</p>
+          
+          <!-- Images of Results -->  
+          <p class="text">&nbsp;</p>
+          <p class="text"><strong>Images:</strong></p>
+          <p class="text">&nbsp;</p>
+          
+          <br>
+       	  <div align="center"><img src="./images/Result_Shape.jpg" width="900" alt="Figure 2"></div>
+          <p class="figure"><strong>Figure 2:</strong> Various 3D interlocking models created by our approach: 8-parts Bimba, 10-parts Mickey, 16-parts Rabbit, 10-parts Vase, 
+          16-parts Pumpkin, and 20-parts Buddha (from left to right)</p>
+          
+          <br>
+       	  <div align="center"><img src="./images/Result_Assembly.jpg" width="900" alt="Figure 3"></div>
+          <p class="figure"><strong>Figure 3:</strong> Assembly of a 10-parts Ball (top), a 12-parts Turtle ( middle), and a 12-parts Duck (bottom).</p>
+          
+          <br>
+       	  <div align="center"><img src="./images/Result_Compare.jpg" width="600" alt="Figure 4"></div>
+          <p class="figure"><strong>Figure 4:</strong> Duck (12 parts) created by [Song et al. 2012] (top) and our method (bottom). (a&d) Voxelized 3D parts 
+          assembly; (b&e) CSG-refined parts assembly; and (c&f) three example 3D parts.</p>
+          
+          <br>
+       	  <div align="center"><img src="./images/Result_Physical.jpg" width="900" alt="Figure 5"></div>
+          <p class="figure"><strong>Figure 5:</strong> 3D-printed interlocking parts (left) and the corresponding assembled object (right). (a) 6-parts Duck by FDM; 
+          (b)12-parts Bunny by FDM; (c) 10-parts Vase by FDM; and (d) 10-parts Maxplanck by SLS.</p>
+          
+          <br>
+       	  <div align="center"><img src="./images/RingPuzzle.jpg" width="900" alt="Figure 6"></div>
+          <p class="figure"><strong>Figure 6:</strong> The 22-parts interlocking ring created by our method. (a) Virtual puzzle ring model; (b) the fabricated (assembled) ring model; 
+          (c) the twenty two 3D parts, individually printed by SLA; and (d) the ring being worn on a finger.</p>
+          
+          
+        <!-- Acknowledgments -->  
+        <p class="text"><strong>Acknowledgments:</strong></p>
+        <p class="text">The authors would like to thank Yael Friedman, a jewelry designer, for her various helpful comments on designing the 22-parts interlocking ring. The project is 
+        partially supported by the National Natural Science Foundation of China (61403357, 61222206), the Fundamental Research Funds for the Central Universities (WK0110000044), 
+        One Hundred Talent Project of the Chinese Academy of Sciences, and MOE AcRF Tier2 funding (MOE2011-T2-2-041 (ARC 5/12)), Singapore.</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        
+        <!-- Bibtex -->  
+        <p class="text"><strong>Bibtex:</strong><br>
+        @article {Song-2015-Interlock,          </p>
+        <p class="text">title = {Printing 3D Objects with Interlocking Parts},              </p>
+        <p class="text">author = {Peng Song and Zhongqi Fu and Ligang Liu and Chi-Wing Fu}, </p>
+        <p class="text">journal = {Computer Aided Geometric design (Proc. of GMP 2015)},    </p>
+        <p class="text">volume = {35-36},     </p>
+        <!--<p class="text">number = {},          </p>-->
+        <p class="text">pages = {137-148},     </p>
+        <p class="text">year = {2015},</p>
+        <p class="text"> }</p>
+        <p class="text">&nbsp;</p>
+        <p class="text">&nbsp;</p>
+        <p class="text">&nbsp;</p>
+        <p class="text">&nbsp;</p>
+
+        </div>
+              
+</div>
+
+
+</body></html>
