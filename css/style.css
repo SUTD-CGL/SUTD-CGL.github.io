@@ -716,6 +716,16 @@ font header .navbar-default .navbar-nav li a:hover {
   padding-top: 5px;
 }
 
+.post-content a{
+  padding-right: 3px;
+  text-decoration:underline;
+}
+
+.navigation img {
+  height: 40px;
+  width: auto;
+}
+
 .navigation .navbar {
   background: none;
   border: 0px;
