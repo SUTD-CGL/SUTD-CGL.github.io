@@ -2270,7 +2270,7 @@ font header .navbar-default .navbar-nav li a:hover {
 .post .post-title {
   margin-top: 5px;
   margin: 15px 0 0;
-  text-transform: uppercase;
+  <!--text-transform: uppercase;-->
 }
 
 .post .post-title a {
