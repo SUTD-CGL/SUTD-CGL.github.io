@@ -2347,8 +2347,8 @@ font header .navbar-default .navbar-nav li a:hover {
 }
 
 .post .post-media.post-thumb img {
-  width: 320px;
-  height: 100%;
+  width: 400px;
+  height: auto;
 
 }
 
@@ -2976,10 +2976,31 @@ a.list-group-item.heading {
   background: #f5f5f5;
 }
 
-#publicationSUTD .row{
 
-  padding: 20px,20px,20px,20px;
-
+/* control the horizontal gap size between the publications */
+.publicationRow
+{
+  margin-bottom: 10px; 
+  margin-top: 20px;
 }
+
+/* control the vertical gap size between the publications */
+.publicationColpic
+{
+  padding-right: 0px; 
+}
+
+.publicationColtext
+{
+  padding-left: 0px; 
+}
+
+/* publication image size auto fit */
+.img-responsive {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
 
 
