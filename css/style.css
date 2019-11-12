@@ -2347,15 +2347,16 @@ font header .navbar-default .navbar-nav li a:hover {
 }
 
 .post .post-media.post-thumb img {
-  width: auto;
+  width: 320px;
   height: 100%;
+
 }
 
-#publicationSUTD img {
-  width: 300px;
+/* #publicationSUTD img {
+  width: 400px;
   height: auto;
   padding: 0px 30px 0px 0px;
-}
+} */
 
 .post .post-media.post-media-audio iframe {
   width: 100%;
@@ -2977,7 +2978,7 @@ a.list-group-item.heading {
 
 #publicationSUTD .row{
 
-  padding: 10,10,10,10;
+  padding: 20px,20px,20px,20px;
 
 }
 
