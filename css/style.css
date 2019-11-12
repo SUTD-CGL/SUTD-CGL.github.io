@@ -2247,13 +2247,13 @@ font header .navbar-default .navbar-nav li a:hover {
 }
 
 .bg-2 {
-  background: url("../images/SUTD.jpg");
+  background: url("../Home/SUTD.jpg");
   background-size: cover;
   background-attachment: fixed;
 }
 
 .bg-3 {
-  background: url("../images/SUTD4_modi.jpg");
+  background: url("../Home/SUTD4_modi.jpg");
   background-size: cover;
   background-attachment: fixed;
 }
