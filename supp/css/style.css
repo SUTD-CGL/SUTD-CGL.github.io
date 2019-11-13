@@ -2343,11 +2343,10 @@ font header .navbar-default .navbar-nav li a:hover {
 
 
 
-/* #publicationSUTD img {
-  width: 400px;
-  height: auto;
-  padding: 0px 30px 0px 0px;
-} */
+#publicationSUTD {
+
+  padding-left: 0px;
+}
 
 .post .post-media.post-media-audio iframe {
   width: 100%;
@@ -2892,11 +2891,13 @@ font header .navbar-default .navbar-nav li a:hover {
 
 .list-group-item {
   position: relative;
+  text-align: center;
   display: block;
-  padding: 10px 10px;
+  padding: 10px 4px;
   margin-bottom: -1px;
   background-color: #ffffff;
   border: 1px solid #dddddd;
+
 }
 
 .list-group-item:first-child {
