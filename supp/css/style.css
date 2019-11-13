@@ -821,7 +821,7 @@ font header .navbar-default .navbar-nav li a:hover {
 }
 
 .slider {
-  background: url("../images/SUTD.jpg") no-repeat;
+  background: url("../Home/SUTD.jpg") no-repeat;
   background-size: cover;
   background-attachment: fixed;
   background-position: 10% 0%;
@@ -2247,22 +2247,17 @@ font header .navbar-default .navbar-nav li a:hover {
 }
 
 .bg-2 {
-  background: url("../supp/Home/SUTD.jpg");
+  background: url("../Home/SUTD.jpg");
   background-size: cover;
   background-attachment: fixed;
 }
 
 .bg-3 {
-  background: url("../supp/Home/SUTD4_modi.jpg");
+  background: url("supp/Home/SUTD4_modi.jpg");
   background-size: cover;
   background-attachment: fixed;
 }
 
-.bg-people {
-  background: url("../images/group_photo_2019.png");
-  background-size: cover;
-  background-attachment: fixed;
-}
 
 .widget {
   margin-bottom: 30px;
