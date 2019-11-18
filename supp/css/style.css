@@ -2996,22 +2996,23 @@ a.list-group-item.heading {
   max-width: 100%;
 }
 
-/* size of publication img */
+/* size and border of publication img */
 .post .post-media.post-thumb .img-responsive-publication {
   width: 400px;
   height: auto;
   border: solid;
-  border-color:black !important; 
+  padding: 4px;
+  border-color:grey !important; 
   border-width:1px !important;
 }
 
 
-
+/* shadow of publication img */
 .myshadow
 {
-  -webkit-box-shadow: 30px 28px 8px -5px rgba(0,0,0,0.34);
-  -moz-box-shadow: 30px 28px 8px -5px rgba(0,0,0,0.34);
-  box-shadow: 30px 28px 8px -5px rgba(0,0,0,0.34);
+-webkit-box-shadow: 5px 5px 3px -1px rgba(133,133,133,1);
+-moz-box-shadow: 5px 5px 3px -1px rgba(133,133,133,1);
+box-shadow: 5px 5px 3px -1px rgba(133,133,133,1);
 }
 
 
