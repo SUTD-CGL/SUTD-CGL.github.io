@@ -3079,5 +3079,12 @@ a.list-group-item.heading {
   height: auto;
 }
 
+.myshadow
+{
+  -webkit-box-shadow: 30px 28px 8px -5px rgba(0,0,0,0.34);
+  -moz-box-shadow: 30px 28px 8px -5px rgba(0,0,0,0.34);
+  box-shadow: 30px 28px 8px -5px rgba(0,0,0,0.34);
+}
+
 
 
