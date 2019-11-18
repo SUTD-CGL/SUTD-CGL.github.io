@@ -3000,6 +3000,18 @@ a.list-group-item.heading {
 .post .post-media.post-thumb .img-responsive-publication {
   width: 400px;
   height: auto;
+  border: solid;
+  border-color:black !important; 
+  border-width:1px !important;
+}
+
+
+
+.myshadow
+{
+  -webkit-box-shadow: 30px 28px 8px -5px rgba(0,0,0,0.34);
+  -moz-box-shadow: 30px 28px 8px -5px rgba(0,0,0,0.34);
+  box-shadow: 30px 28px 8px -5px rgba(0,0,0,0.34);
 }
 
 
@@ -3079,12 +3091,9 @@ a.list-group-item.heading {
   height: auto;
 }
 
-.myshadow
-{
-  -webkit-box-shadow: 30px 28px 8px -5px rgba(0,0,0,0.34);
-  -moz-box-shadow: 30px 28px 8px -5px rgba(0,0,0,0.34);
-  box-shadow: 30px 28px 8px -5px rgba(0,0,0,0.34);
-}
+
+
+
 
 
 
