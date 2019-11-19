@@ -2374,7 +2374,7 @@ font header .navbar-default .navbar-nav li a:hover {
   display: inline-block;
   color: #909090;
   margin-right: 20px;
-  font-size: 14px;
+  font-size: 15px;
   letter-spacing: 0.5px;
 }
 
@@ -2391,7 +2391,7 @@ font header .navbar-default .navbar-nav li a:hover {
 }
 
 .post .post-content {
-  margin-top: 5px;
+  margin-top: 8px;
 }
 
 .post .post-content p {
@@ -3002,7 +3002,9 @@ a.list-group-item.heading {
   height: auto;
   border: solid;
   padding: 4px;
-  border-color:grey !important; 
+  /*border-color: rgba(255,255,255,1) !no border; 
+  border-width:0px !no border;*/
+  border-color:rgba(200,200,200,1) !important; 
   border-width:1px !important;
 }
 
@@ -3010,9 +3012,12 @@ a.list-group-item.heading {
 /* shadow of publication img */
 .myshadow
 {
--webkit-box-shadow: 5px 5px 3px -1px rgba(133,133,133,1);
--moz-box-shadow: 5px 5px 3px -1px rgba(133,133,133,1);
-box-shadow: 5px 5px 3px -1px rgba(133,133,133,1);
+ /* -webkit-box-shadow: 5px 5px 3px -1px rgba(255,255,255,1);
+-moz-box-shadow: 5px 5px 3px -1px rgba(255,255,255,1);
+box-shadow: 5px 5px 3px -1px rgba(255,255,255,1);*/
+-webkit-box-shadow: 3px 3px 2px -1px rgba(210,210,210,1);
+-moz-box-shadow: 3px 3px 2px -1px rgba(210,210,210,1);
+box-shadow: 3px 3px 2px -1px rgba(210,210,210,1);
 }
 
 
