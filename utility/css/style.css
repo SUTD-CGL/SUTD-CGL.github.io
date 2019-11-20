@@ -1,12 +1,12 @@
 /*=== MEDIA QUERY ===*/
-@import url(
+/* @import url(
   http://fonts.googleapis.com/css?family=Roboto:400,
   100,
   300,
   500,
   700
 );
-@import url(https://fonts.googleapis.com/css?family=Oswald:300, 400, 500, 600);
+@import url(https://fonts.googleapis.com/css?family=Oswald:300, 400, 500, 600); */
 @import url(http://fonts.googleapis.com/css?family=Volkhov:400italic);
 .position {
   font-size: 30px;
@@ -821,7 +821,7 @@ font header .navbar-default .navbar-nav li a:hover {
 }
 
 .slider {
-  background: url("../Home/SUTD.jpg") no-repeat;
+  background: url("../../supp/Home/SUTD.jpg") no-repeat;
   background-size: cover;
   background-attachment: fixed;
   background-position: 10% 0%;
@@ -2247,7 +2247,7 @@ font header .navbar-default .navbar-nav li a:hover {
 }
 
 .bg-2 {
-  background: url("../Home/SUTD.jpg");
+  background: url("../../supp/Home/SUTD.jpg");
   background-size: cover;
   background-attachment: fixed;
 }
@@ -2337,8 +2337,8 @@ font header .navbar-default .navbar-nav li a:hover {
 
 .post {
   background: #fff;
-  margin-bottom: 40px;
-  padding-bottom: 20px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
 }
 
 
@@ -2370,12 +2370,14 @@ font header .navbar-default .navbar-nav li a:hover {
   margin-top: 10px;
 }
 
+
 .post .post-meta ul li {
   display: inline-block;
   color: #909090;
   margin-right: 20px;
   font-size: 15px;
   letter-spacing: 0.5px;
+  white-space: pre-line;
 }
 
 .post .post-meta ul li a {
@@ -3010,7 +3012,7 @@ a.list-group-item.heading {
 
 
 /* shadow of publication img */
-.myshadow
+.myshadow_publication
 {
  /* -webkit-box-shadow: 5px 5px 3px -1px rgba(255,255,255,1);
 -moz-box-shadow: 5px 5px 3px -1px rgba(255,255,255,1);
@@ -3027,7 +3029,7 @@ box-shadow: 3px 3px 2px -1px rgba(210,210,210,1);
 /* control the horizontal gap size between the resources */
 .resourceRow
 {
-  margin-bottom: 40px; 
+  margin-bottom: 20px; 
   margin-top: 5px;
 }
 
@@ -3052,10 +3054,29 @@ box-shadow: 3px 3px 2px -1px rgba(210,210,210,1);
   max-width: 100%;
 }
 
-/* size of resource img */
+
+/* size and border of resource img */
 .post .post-media.post-thumb .img-responsive-resource {
   width: 260px;
   height: auto;
+  border: solid;
+  padding: 4px;
+  /*border-color: rgba(255,255,255,1) !no border; 
+  border-width:0px !no border;*/
+  border-color:rgba(200,200,200,1) !important; 
+  border-width:1px !important;
+}
+
+
+/* shadow of publication img */
+.myshadow_resource
+{
+ /* -webkit-box-shadow: 5px 5px 3px -1px rgba(255,255,255,1);
+-moz-box-shadow: 5px 5px 3px -1px rgba(255,255,255,1);
+box-shadow: 5px 5px 3px -1px rgba(255,255,255,1);*/
+-webkit-box-shadow: 3px 3px 2px -1px rgba(210,210,210,1);
+-moz-box-shadow: 3px 3px 2px -1px rgba(210,210,210,1);
+box-shadow: 3px 3px 2px -1px rgba(210,210,210,1);
 }
 
 
@@ -3091,11 +3112,38 @@ box-shadow: 3px 3px 2px -1px rgba(210,210,210,1);
   max-width: 100%;
 }
 
-/* size of teach img */
+
+/* size and border of teach img */
 .post .post-media.post-thumb .img-responsive-teach {
   width: 200px;
   height: auto;
+  border: solid;
+  padding: 4px;
+  border-color:rgba(200,200,200,1) !important; 
+  border-width:1px !important;
 }
+
+
+/* shadow of teach img */
+.myshadow_teach
+{
+ /* -webkit-box-shadow: 5px 5px 3px -1px rgba(255,255,255,1);
+-moz-box-shadow: 5px 5px 3px -1px rgba(255,255,255,1);
+box-shadow: 5px 5px 3px -1px rgba(255,255,255,1);*/
+-webkit-box-shadow: 3px 3px 2px -1px rgba(210,210,210,1);
+-moz-box-shadow: 3px 3px 2px -1px rgba(210,210,210,1);
+box-shadow: 3px 3px 2px -1px rgba(210,210,210,1);
+}
+
+
+
+/* personalize all the <a> style */
+a:link { text-decoration: none;color: 6464FF}
+a:active { text-decoration:blink}
+a:hover { text-decoration:underline;color: 6464FF} 
+a:visited { text-decoration: none;color: 551A8B}
+
+
 
 
 

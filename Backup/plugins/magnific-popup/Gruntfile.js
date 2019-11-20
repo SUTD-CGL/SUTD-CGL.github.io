@@ -43,7 +43,7 @@ module.exports = function(grunt) {
     jshint: {
       all: [
         'Gruntfile.js',
-        'src//supp/js/*.js'
+        'src//utility/js/*.js'
       ],
       options: {
         jshintrc: '.jshintrc'
@@ -61,7 +61,7 @@ module.exports = function(grunt) {
           'gallery',
           'retina',
         ],
-        basePath: 'src//supp/js/',
+        basePath: 'src//utility/js/',
         dest: 'dist/jquery.magnific-popup.js',
         banner: '<%= banner %>'
       }
