@@ -1,0 +1,289 @@
+ <!--======================================================================
+//
+// Website: Song Peng's Homepage
+//
+// Author: Song Peng
+//
+// Date: Feb 24, 2014
+//
+==========================================================================-->
+
+<html><head><title>Wind-up Toys</title>
+
+<style>
+a:link { text-decoration: none;color: 6464FF}
+a:active { text-decoration:blink}
+a:hover { text-decoration:underline;color: 6464FF} 
+a:visited { text-decoration: none;color: 551A8B}
+</style>
+
+
+<!--------------------------------------------------------------------------------------------------->
+<!--                                       Header and Photo                                       --->
+<!--------------------------------------------------------------------------------------------------->
+    	
+<body background="./images/desktop.jpg"  style="width:1200; margin:0 auto;">
+<font size="3" face="Arial">
+<blockquote>
+  <p>
+  </p><center>
+  <table border="0">
+    <tbody>
+    <tr>
+      <td width="30"></td>
+      <td width="1200"><center>
+        
+        <!--Header-->
+        <br><br><br>
+        <h2><span style="font-size: 25pt">Computational Design of Wind-up Toys</span></h2>
+        <br>
+        
+          <p class="authors">
+          <span style="font-size: 15pt">
+          <a href="https://songpenghit.github.io">Peng Song</a><sup>1</sup>&nbsp&nbsp
+          Xiaofei Wang<sup>1</sup>&nbsp&nbsp 
+          Xiao Tang<sup>1</sup>&nbsp&nbsp
+          <a href="http://www.cse.cuhk.edu.hk/~cwfu/">Chi-Wing Fu</a><sup>2</sup>&nbsp&nbsp
+          Hongfei Xu<sup>1</sup>&nbsp&nbsp
+          <a href="http://staff.ustc.edu.cn/~lgliu/">Ligang Liu</a><sup>1</sup> &nbsp and &nbsp
+          <a href="http://www0.cs.ucl.ac.uk/staff/n.mitra/">Niloy J. Mitra</a><sup>3</sup>
+    
+          <br><br>
+          <sup>1</sup> <a href="http://en.ustc.edu.cn/">University of Science and Technology of China</a> &nbsp&nbsp&nbsp
+          <sup>2</sup> <a href="http://www.cuhk.edu.hk/english/index.html">The Chinese University of Hong Kong</a> &nbsp&nbsp&nbsp
+          <sup>3</sup> <a href="https://www.ucl.ac.uk/">University College London</a> <br><br>
+
+          <strong><a href="https://sa2017.siggraph.org/">SIGGRAPH Asia 2017</a>, technical paper</strong></p>
+          </span>
+       	  <p class="authors">&nbsp;</p>
+        
+        <!-- <p>
+        <a href="http://en.cs.ustc.edu.cn/"><span style="font-size: 18pt">School of Computer Science and Technology</span></a>
+        <br>
+        <br>
+        <a href="http://en.ustc.edu.cn/"><span style="font-size: 18pt">University of Science and Technology of China</span></a>
+        
+ 
+        </p>-->
+        
+        <!----Photo---->
+        <!--<div style="position: absolute; left: 1060px; top:40px;">
+        <img src="images/Photo_SongPeng.jpg" width = "350" style="border: 0px gray solid">
+        </div>-->
+        
+       </td>
+     </tr>
+     </tbody>
+  </table></center>
+  <p></p>
+
+
+<!-- Figure 1: Overview-->
+<br>
+<div align="center">
+<img src="./images/Teaser.jpg" width="1060" alt="Figure 1">
+</div>
+<p class="figure"><strong>Figure 1:</strong> (a) Input model with user-provided parts geometry and motion; (b) wind-up mechanism constructed by our method; (c) 3D-printed parts
+(top two rows) and spring motor (bottom); and (d) assembled toy (9.2 x 6.7 x 6.4cm^3; and 16.1g shell + 7.9g motor + 7.3g mechanism). </p>
+
+<!--------------------------------------------------------------------------------------------------->
+<!--                                            Abstract                                          --->
+<!--------------------------------------------------------------------------------------------------->
+
+<br><br>
+<div align="justify" width: 1200px>
+
+<h2>Abstract</h2>
+
+<span style="font-size: 13pt">
+<!--<ul>-->
+Wind-up toys are mechanical assemblies that perform intriguing motions
+driven by a simple spring motor. Due to the limited motor force and small
+body size, wind-up toys often employ higher pair joints of less frictional
+contacts and connector parts of nontrivial shapes to transfer motions. These
+unique characteristics make them hard to design and fabricate as compared
+to other automata. This paper presents a computational system to aid the
+design of wind-up toys, focusing on constructing a compact internal wind-up
+mechanism to realize user-requested part motions. Our key contributions
+include an analytical modeling of a wide variety of elemental mechanisms
+found in common wind-up toys, including their geometry and kinematics,
+conceptual design of wind-up mechanisms by computing motion transfer
+trees to realize the requested part motions, automatic construction of
+wind-up mechanisms by connecting multiple elemental mechanisms, and an
+optimization on the part and joint geometry with an objective of compacting
+the mechanism, reducing its weight, and avoiding collision. We use our
+system to design wind-up toys of various forms, fabricate a number of them
+using 3D printing, and show the functionality of various results.
+</span>
+</div>
+
+<BR><BR>
+
+
+
+
+<!--------------------------------------------------------------------------------------------------->
+<!--                                            Download                                          --->
+<!--------------------------------------------------------------------------------------------------->
+
+<hr>
+
+<div align="justify">
+
+<h2>Download </h2>
+
+<!--Click the following link to download:-->
+<span style="font-size: 13pt; line-height:32px">
+<a href="download/paper.highres.pdf">high-res PDF</a>(~30M)              <BR>
+<a href="download/paper.lowres.pdf">low-res PDF</a>(~2M)                 <BR>
+<a href="download/supp.material.pdf">supplementary material</a>(~1.5M)   <BR>
+<a href="download/MechanismVisualizer_Release.rar">source code</a>(~6M)  <BR>
+<!--<a href="download/MechanismCreator_Publish.rar"> Source Code (~6M)</a>-->
+</span>
+
+</div>
+
+<BR><BR>
+
+
+<!-------------------------------------------- ------------------------------------------------------->
+<!--                                             Video                                           --->
+<!--------------------------------------------------------------------------------------------------->
+
+<hr>
+
+<h2>Video </h2>
+
+<!--</p>-->
+<div id="Div3" align="center">
+<embed src="http://www.youtube.com/v/LBCHFQxoPBc&amp;hl=en&amp;fs=1" allowFullScreen="true" quality="high" width="720" height="480" 
+align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
+</div>          
+
+<BR><BR><BR>
+
+  <!-- Video --> 
+
+
+
+
+<!--------------------------------------------------------------------------------------------------->
+<!--                                            Results                                           --->
+<!--------------------------------------------------------------------------------------------------->
+
+<hr>
+
+<div align="justify">
+
+<h2>Results </h2>
+
+<BR>
+<div align="center"><img src="./images/EMechTable.jpg" width="1060" alt="Figure 2"></div>
+<p class="figure"><strong>Figure 2:</strong> 
+Elemental mechanisms we modeled in our system. 
+Each mechanism includes a driver (blue), a follower (brown), and one or more fixed supporters (grey), for transferring motion from the driver to the follower; 
+see the equation below each mechanism, and also the red arrows next to each driver and follower. 
+We categorize the mechanisms into four groups (<strong>R</strong>, <strong>O</strong>, <strong>T</strong>, and <strong>OT</strong>) according to the motion of the driver.</p>
+<BR><BR>
+
+
+<div align="center"><img src="./images/result_models.jpg" width="1060" alt="Figure 2"></div>
+<p class="figure"><strong>Figure 3:</strong> 
+Some of the wind-up toys produced from our system;
+from left to right: Bunny, Horse, Mickey, Dragon, Tree, and House. 
+From top to bottom: input models and prescribed toy part motions, the optimized wind-up mechanisms, and the associated motion transfer trees, 
+where we color the nodes connected to the external toy parts in orange.</p>
+<BR><BR>
+
+
+<div align="center"><img src="./images/result_UserStudy.jpg" width="1060" alt="Figure 2"></div>
+<p class="figure"><strong>Figure 4:</strong> 
+Wind-up toys designed by the participants in the user evaluation and generated from our system accordingly; 
+from left to right: Box, Flower Pot, Minion, Jack O¡¯Lantern, Crab, and Gecko. 
+From top to bottom: input models and user-prescribed toy part motions, the optimized wind-up mechanisms, and the associated motion transfer trees.</p>
+<BR><BR>
+
+
+<div align="center"><img src="./images/result_fabrication.jpg" width="1060" alt="Figure 2"></div>
+<p class="figure"><strong>Figure 5:</strong> 
+Four of the six wind-up toys (top) that we have fabricated and assembled from 3D-printed parts (bottom). 
+From left to right: Bunny (13.0g shell + 7.8g motor + 9.0g mechanism), Horse (15.3g shell + 5.9g motor + 26.1g mechanism), 
+Flower Pot (34.8g shell + 5.8g motor + 8.0g mechanism), and House (48.9g shell + 6.0g motor + 6.4g mechanism).</p>
+<BR><BR>
+
+
+</div>
+
+<BR>
+
+
+<!--------------------------------------------------------------------------------------------------->
+<!--                                        Acknowledgments                                       --->
+<!--------------------------------------------------------------------------------------------------->
+
+<hr>
+
+<div align="justify">
+
+<h2>Acknowledgments </h2>
+
+<p class="text">
+<span style="font-size: 13pt; line-height:22px">
+We thank the reviewers for the valuable comments, and 
+Thingiverse for providing 3D models of Angry Bird, Horse, Dragon, Tree, Flower Pot, Minion, and Gecko. 
+This work is supported in part
+by the National Natural Science Foundation of China (61403357, 61672482, 11626253), 
+the One Hundred Talent Project of the Chinese Academy of Sciences, 
+the Hong Kong RGC General Research Funding Project (14203416), 
+the ERC Starting Grant SmartGeometry (StG-2013-335373), and 
+gifts from Adobe.
+</p>
+</span>
+</div>
+
+<BR><BR>
+
+
+
+<!--------------------------------------------------------------------------------------------------->
+<!--                                        Acknowledgments                                       --->
+<!--------------------------------------------------------------------------------------------------->
+
+<hr>
+
+<div align="justify">
+
+<h2>Bibtex </h2>
+<span style="font-size: 13pt; line-height:30px">
+@article {Song-2017-Wind-upToy,  <br>     
+&nbsp&nbsp&nbsp title &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp   = {Computational Design of Wind-up Toys}, <br>            
+&nbsp&nbsp&nbsp author &nbsp  = {Peng Song and Xiaofei Wang and Xiao Tang and Chi-Wing Fu and Hongfei Xu and Ligang Liu and Niloy J. Mitra}, <br>
+&nbsp&nbsp&nbsp journal &nbsp = {ACM Transactions on Graphics (SIGGRAPH Asia 2017)}, <br>  
+&nbsp&nbsp&nbsp volume  = {36}, <br>        
+&nbsp&nbsp&nbsp number  = {6}, <br>          
+&nbsp&nbsp&nbsp pages  &nbsp = {238:1 -- 238:13}, <br>
+&nbsp&nbsp&nbsp year  &nbsp&nbsp&nbsp&nbsp = {2017}} <br>
+
+</span>
+</div>
+
+<BR><BR>
+
+
+<!----------------------------CopyRight---------------------------->
+
+<hr>
+
+<div align="justify">
+<center>
+ Copyright @ <a href="http://staff.ustc.edu.cn/~songpeng/">Peng Song</a> | Last revised:Sep., 2017. 
+ <!--<a href="http://www.reliablecounter.com" target="_blank"><img src="http://www.reliablecounter.com/count.php?page=staff.ustc.edu.cn/~songpeng/&digit=style/plain/10/&reloads=0" alt="" title="" border="0"></a><br /><a href="http://" target="_blank" style="font-family: Geneva, Arial; font-size: 9px; color: #330010; text-decoration: none;"></a> Visits since 2017-07-30-->
+<BR><BR>
+</div>
+
+
+</div>
+</blockquote>
+</font>
+
+</html>
