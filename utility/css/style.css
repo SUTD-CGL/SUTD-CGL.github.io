@@ -2355,6 +2355,8 @@ font header .navbar-default .navbar-nav li a:hover {
 .post .post-title {
   margin-top: 5px;
   margin: 15px 0 0;
+  /*color: #655e7a;*/
+  color:#3c3c3c
 }
 
 .post .post-title a {
@@ -3029,8 +3031,8 @@ box-shadow: 3px 3px 2px -1px rgba(210,210,210,1);
 /* control the horizontal gap size between the resources */
 .resourceRow
 {
-  margin-bottom: 20px; 
-  margin-top: 5px;
+  margin-bottom: 50px; 
+  margin-top: 6px;
 }
 
 /* control the vertical gap size between the resources */
@@ -3138,10 +3140,10 @@ box-shadow: 3px 3px 2px -1px rgba(210,210,210,1);
 
 
 /* personalize all the <a> style */
-a:link { text-decoration: none;color: 6464FF}
+a:link { text-decoration: none; color:#538ac5} /* 6464FF */
 a:active { text-decoration:blink}
-a:hover { text-decoration:underline;color: 6464FF} 
-a:visited { text-decoration: none;color: 551A8B}
+a:hover { text-decoration:underline; color:#386492} 
+a:visited { text-decoration: none;color: #538ac5}
 
 
 
