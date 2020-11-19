@@ -769,8 +769,9 @@ font header .navbar-default .navbar-nav li a:hover {
   text-decoration: underline;
 }
 
+/* CGL logo */
 .navigation img {
-  height: 40px;
+  height: 35px;
   width: auto;
 }
 
@@ -2972,6 +2973,19 @@ a.list-group-item.heading {
   background: #f5f5f5;
 }
 
+.sidebar
+{
+  text-align: left;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////// */
+/* css for research page */
+.researchpublicationColpic
+{
+  padding-right: 0px; 
+  padding-left: 0px;
+}
+
 /* /////////////////////////////////////////////////////////////////////////////// */
 /* css for publication page */
 
@@ -2980,6 +2994,7 @@ a.list-group-item.heading {
 {
   margin-bottom: 40px; 
   margin-top: 5px;
+  padding-left: 2%;
 }
 
 /* control the vertical gap size between the publications */
@@ -2990,8 +3005,42 @@ a.list-group-item.heading {
 
 .publicationColtext
 {
-  padding-left: 40px; 
+  padding-left: 25px; 
+  font-size: 100%;
 }
+
+.publicationColtext .post-title
+{
+  font-size: 134%;
+}
+
+/* publication main body */
+.post .body-publication ul li {
+  display: inline-block;
+  color: #909090;
+  margin-right: 20px;
+  font-size: 14.5px;
+  letter-spacing: 0.5px;
+  white-space: pre-line;
+}
+
+.post .body-publication {
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.post .body-publication ul li a {
+  color: #909090;
+}
+
+.post .body-publication ul li a:hover {
+  color: #655e7a;
+}
+
+.post .body-publication .post-author {
+  color: #000;
+}
+
 
 /* publication image size auto fit */
 .img-responsive-publication {
@@ -3002,7 +3051,7 @@ a.list-group-item.heading {
 
 /* size and border of publication img */
 .post .post-media.post-thumb .img-responsive-publication {
-  width: 400px;
+  width: 260px;
   height: auto;
   border: solid;
   padding: 4px;
@@ -3114,6 +3163,13 @@ box-shadow: 3px 3px 2px -1px rgba(210,210,210,1);
   max-width: 100%;
 }
 
+.list-group {
+  height: auto;
+  text-align: center;
+
+  max-width: 100%;
+}
+
 
 /* size and border of teach img */
 .post .post-media.post-thumb .img-responsive-teach {
@@ -3144,6 +3200,7 @@ a:link { text-decoration: none; color:#538ac5} /* 6464FF */
 a:active { text-decoration:blink}
 a:hover { text-decoration:underline; color:#386492} 
 a:visited { text-decoration: none;color: #538ac5}
+
 
 
 

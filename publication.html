@@ -7,7 +7,6 @@
 <!--<![endif]-->
 
 <script>
-
 	function myresize() {
 
 		if (window.innerWidth < 800) {
@@ -16,30 +15,41 @@
 			//console.log("static");
 		}
 		else {
+			var container = document.getElementById('mysidebar');
 			var div1 = document.getElementById('mywidget');
+			var preWidth = container.offsetWidth;
 			div1.style.position = "fixed";
+			div1.style.width = preWidth*0.9 + "px";
 			//console.log("fixed");
 		}
 
 	};
-
-
 	function isPc() {
 
 		if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
 			var div1 = document.getElementById('mywidget');
+			
 			div1.style.position = "static";
+			
 			//console.log("static");
 		}
 		else {
+
+			//setTimeout(fixSidebar, 3000);
+			
+			var container = document.getElementById('mysidebar');
 			var div1 = document.getElementById('mywidget');
+			var preWidth = container.offsetWidth;
 			div1.style.position = "fixed";
-			//console.log("fixed");
+			div1.style.width = preWidth*0.9 + "px";
 		}
-	}
+		}
 
+	
 
-
+	function fixSidebar()
+		{
+		}
 
 
 </script>
@@ -110,7 +120,7 @@
 								<ul class="nav navbar-nav navbar-right">
 									<li><a href="index.html">Home</a></li>
 									<li><a href="people.html">People</a></li>
-									<!--<li><a href="research.html">Research</a></li>-->
+									<li><a href="research.html">Research</a></li>
 									<li><a href="publication.html">Publications</a></li>
 									<li><a href="teaching.html">Teaching</a></li>
 									<!--<li><a href="gallery.html">Gallery</a></li>-->
@@ -141,14 +151,10 @@
 		<div class="container">
 
 			<div class="row">
-				<div class="col-lg-1 col-md-1 col-sm-1 col-xs-12" id="mysidebar">
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" id="mysidebar">
 					<aside class="sidebar">
-
-
-						<div class="list-group" id="mywidget" style="position:fixed">
+						<div class="list-group" id="mywidget">
 							<a class="list-group-item heading">Year</a>
-
-
 							<a href="#year2021" class="list-group-item">2021</a>
 							<a href="#year2020" class="list-group-item">2020</a>
 							<a href="#year2019" class="list-group-item">2019</a>
@@ -156,94 +162,87 @@
 							<a href="#year2017" class="list-group-item">2017</a>
 							<a href="#year2016" class="list-group-item">before</a>
 							<!--<a href="#year2014" class="list-group-item">before</a>-->
-
 						</div>
 					</aside>
 				</div>
 
 
-				<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12" id="publicationSUTD">
-
+				<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12" id="publicationSUTD">
+				
 					<!--2021-->
 					<div class="col-lg-12 col-md-12">
-							<h2 id="year2021">2021</h2>
-							<hr>
-						</div>
+						<h2 id="year2021">2021</h2>
+						<hr>
+					</div>
 			
-	
-						<!-- 2021-TVCG-4DPrintedShape -->
-	
-						<div class="row publicationRow">
-							<div class="post">
-								<div class="col-lg-4 col-md-4 publicationColpic">
-									<div class="post-media post-thumb ">
-										<a> <img class="img-responsive-publication myshadow_publication" src="supp/Publication/images/2021-TVCG-4DPrintedShape.jpg" alt=""> </a>
-									</div>
-								</div>
-	
-								<div class="col-lg-8 col-md-8 publicationColtext">
-									<h3 class="post-title">Computational Design of Self-actuated Deformable Solids via Shape Memory Material</h3>
-									<div class="post-meta">
-										<ul>
-											<li>Yucheng Sun, Wenqing Ouyang, Zhongyuan Liu, Ning Ni, Yann Savoye, Peng Song, and Ligang Liu</li>
-											<li>IEEE Transactions on Visualization and Computer Graphics (<b>TVCG</b>), accepted</li>
-										</ul>
-									</div>
-								    <!--<<div class="post-content">
-									    a href="supp/Publication/papers/2020-EG-Non-CircularGears.pdf">Paper</a> &nbsp;
-									    <a href="https://youtu.be/fhVbqKal2es">Video</a> &nbsp;
-									    <a href="https://onlinelibrary.wiley.com/doi/10.1111/cgf.13939">Wiley Online Library</a>
-								    </div>-->
+					<!-- 2021-TVCG-4DPrintedShape -->
+					<div class="row publicationRow">
+						<div class="post">
+							<div class="col-lg-4 col-md-4 publicationColpic">
+								<div class="post-media post-thumb ">
+									<a> <img class="img-responsive-publication myshadow_publication" src="supp/Publication/images/2021-TVCG-4DPrintedShape.jpg" alt=""> </a>
 								</div>
 							</div>
+
+							<div class="col-lg-8 col-md-8 publicationColtext">
+								<h3 class="post-title">Computational Design of Self-actuated Deformable Solids via Shape Memory Material</h3>
+								<div class="body-publication">
+									<ul>
+										<li>Yucheng Sun, Wenqing Ouyang, Zhongyuan Liu, Ning Ni, Yann Savoye, Peng Song, and Ligang Liu</li>
+										<li>IEEE Transactions on Visualization and Computer Graphics (<b>TVCG</b>), accepted</li>
+									</ul>
+								</div>
+							    <!--<<div class="post-content">
+								    a href="supp/Publication/papers/2020-EG-Non-CircularGears.pdf">Paper</a> &nbsp;
+								    <a href="https://youtu.be/fhVbqKal2es">Video</a> &nbsp;
+								    <a href="https://onlinelibrary.wiley.com/doi/10.1111/cgf.13939">Wiley Online Library</a>
+							    </div>-->
+							</div>
 						</div>
+					</div>
 
 
 					<!--2020-->
 					<div class="col-lg-12 col-md-12">
-							<h2 id="year2020">2020</h2>
-							<hr>
-						</div>
+						<h2 id="year2020">2020</h2>
+						<hr>
+					</div>
 
-	
-						<!-- 2020-EG-NonCircularGear -->
-	
-						<div class="row publicationRow">
-							<div class="post">
-								<div class="col-lg-4 col-md-4 publicationColpic">
-									<div class="post-media post-thumb ">
-										<a> <img class="img-responsive-publication myshadow_publication" src="supp/Publication/images/2020-EG-NonCircularGear.jpg" alt=""> </a>
-									</div>
-								</div>
-	
-								<div class="col-lg-8 col-md-8 publicationColtext">
-									<h3 class="post-title">Computational Design and Optimization of Non-Circular Gears</h3>
-									<div class="post-meta">
-										<ul>
-											<li>Hao Xu*, Tianwen Fu*, Peng Song, Mingjun Zhou, Chi-Wing Fu, and Niloy J. Mitra (* joint 1st authors)</li>
-											<li>Computer Graphics Forum (Proc. of <b>Eurographics</b>), 2020</li>
-										</ul>
-									</div>
-								    <div class="post-content">
-								    	<a href="https://appsrv.cse.cuhk.edu.hk/~haoxu/projects/compute_gear/" target="_blank">Homepage</a> &nbsp;
-									    <a href="supp/Publication/papers/2020-EG-Non-CircularGears.pdf">Paper</a> &nbsp;
-									    <a href="https://youtu.be/fhVbqKal2es">Video</a> &nbsp;
-									    <a href="https://onlinelibrary.wiley.com/doi/10.1111/cgf.13939">Wiley Online Library</a>
-								    </div>
+					<!-- 2020-EG-NonCircularGear -->
+					<div class="row publicationRow">
+						<div class="post">
+							<div class="col-lg-4 col-md-4 publicationColpic">
+								<div class="post-media post-thumb ">
+									<a> <img class="img-responsive-publication myshadow_publication" src="supp/Publication/images/2020-EG-NonCircularGear.jpg" alt=""> </a>
 								</div>
 							</div>
+
+							<div class="col-lg-8 col-md-8 publicationColtext">
+								<h3 class="post-title">Computational Design and Optimization of Non-Circular Gears</h3>
+								<div class="body-publication">
+									<ul>
+										<li>Hao Xu*, Tianwen Fu*, Peng Song, Mingjun Zhou, Chi-Wing Fu, and Niloy J. Mitra (* joint 1st authors)</li>
+										<li>Computer Graphics Forum (Proc. of <b>Eurographics</b>), 2020</li>
+									</ul>
+								</div>
+							    <div class="post-content">
+							    	<a href="https://appsrv.cse.cuhk.edu.hk/~haoxu/projects/compute_gear/" target="_blank">Homepage</a> &nbsp;
+								    <a href="supp/Publication/papers/2020-EG-Non-CircularGears.pdf">Paper</a> &nbsp;
+								    <a href="https://youtu.be/fhVbqKal2es">Video</a> &nbsp;
+								    <a href="https://onlinelibrary.wiley.com/doi/10.1111/cgf.13939">Wiley Online Library</a>
+							    </div>
+							</div>
 						</div>
+					</div>
 
 
 					<!--2019-->
-
 					<div class="col-lg-12 col-md-12">
 						<h2 id="year2019">2019</h2>
 						<hr>
 					</div>
 
 					<!-- 2019-SIGAsia-TopoInterlock -->
-
 					<div class="row publicationRow">
 						<div class="post">
 							<div class="col-lg-4 col-md-4 publicationColpic">
@@ -254,7 +253,7 @@
 
 							<div class="col-lg-8 col-md-8 publicationColtext">
 								<h3 class="post-title">Design and Structural Optimization of Topological Interlocking Assemblies</h3>
-								<div class="post-meta">
+								<div class="body-publication">
 									<ul>
 										<li>Ziqi Wang, Peng Song, Florin Isvoranu, and Mark Pauly</li>
 										<li>ACM Transactions on Graphics (Proc. of <b>SIGGRAPH Asia</b>), 2019</li>
@@ -271,7 +270,6 @@
 					</div>
 
 					<!-- 2019-EG-3DDissection -->
-
 					<div class="row publicationRow">
 						<div class="post">
 							<div class="col-lg-4 col-md-4 publicationColpic">
@@ -283,7 +281,7 @@
 
 							<div class="col-lg-8 col-md-8 publicationColtext">
 								<h3 class="post-title">Computational Design of Steady 3D Dissection Puzzles</h3>
-								<div class="post-meta">
+								<div class="body-publication">
 									<ul>
 										<li>Keke Tang, Peng Song, Xiaofei Wang, Bailin Deng, Chi-Wing Fu, and Ligang Liu</li>
 										<li>Computer Graphics Forum (Proc. of <b>Eurographics</b>), 2019</li>
@@ -300,12 +298,9 @@
 
 
 					<!--2018-->
-					<div class="row">
-						<div class="col-lg-12 col-md-12">
-							<br>
-							<h2 id="year2018">2018</h2>
-							<hr>
-						</div>
+					<div class="col-lg-12 col-md-12">
+						<h2 id="year2018">2018</h2>
+						<hr>
 					</div>
 
 					<!-- 2018-SIGAsia-DESIA -->
@@ -320,7 +315,7 @@
 
 							<div class="col-lg-8 col-md-8 publicationColtext">
 								<h3 class="post-title">DESIA: A General Framework for Designing Interlocking Assemblies</h3>
-								<div class="post-meta">
+								<div class="body-publication">
 									<ul>
 										<li>Ziqi Wang, Peng Song, and Mark Pauly</li>
 										<li>ACM Transactions on Graphics (Proc. of <b>SIGGRAPH Asia</b>), 2018</li>
@@ -348,7 +343,7 @@
 
 							<div class="col-lg-8 col-md-8 publicationColtext">
 								<h3 class="post-title">Grasp Planning via Hand-Object Geometric Fitting</h3>
-								<div class="post-meta">
+								<div class="body-publication">
 									<ul>
 										<li>Peng Song, Zhongqi Fu, and Ligang Liu</li>  <br>
 										<li>The Visual Computer, 2018</li>
@@ -365,12 +360,9 @@
 
 
 					<!--2017-->
-					<div class="row">
-						<div class="col-lg-12 col-md-12">
-							<br>
-							<h2 id="year2017">2017</h2>
-							<hr>
-						</div>
+					<div class="col-lg-12 col-md-12">
+						<h2 id="year2017">2017</h2>
+						<hr>
 					</div>
 
 					<!-- 2017-SIGAsia-Wind-upToy -->
@@ -384,7 +376,7 @@
 
 							<div class="col-lg-8 col-md-8 publicationColtext">
 								<h3 class="post-title">Computational Design of Wind-up Toys</h3>
-								<div class="post-meta">
+								<div class="body-publication">
 									<ul>
 										<li>Peng Song</i>, Xiaofei Wang, Xiao Tang, Chi-Wing Fu, Hongfei Xu, Ligang Liu,and Niloy J. Mitra</li>
 										<li>ACM Transactions on Graphics (Proc. of <b>SIGGRAPH Asia</b>), 2017</li>
@@ -414,7 +406,7 @@
 
 							<div class="col-lg-8 col-md-8 publicationColtext">
 								<h3 class="post-title">Reconfigurable Interlocking Furniture</h3>
-								<div class="post-meta">
+								<div class="body-publication">
 									<ul>
 										<li>Peng Song*, Chi-Wing Fu*, Yueming Jin, Hongfei Xu, Ligang Liu, Pheng-Ann Heng, and Daniel Cohen-Or (* joint 1st authors)</li>
 										<li>ACM Transactions on Graphics (Proc. of <b>SIGGRAPH Asia</b>), 2017</li>
@@ -432,12 +424,9 @@
 
 
 					<!--2016-->
-					<div class="row">
-						<div class="col-lg-12 col-md-12">
-							<br>
-							<h2 id="year2016">2016</h2>
-							<hr>
-						</div>
+					<div class="col-lg-12 col-md-12">
+						<h2 id="year2016">2016</h2>
+						<hr>
 					</div>
 
 					<!-- 2016-SIGGRAPH-CofiFab -->
@@ -451,7 +440,7 @@
 
 							<div class="col-lg-8 col-md-8 publicationColtext">
 								<h3 class="post-title">CofiFab: Coarse-to-Fine Fabrication of Large 3D Objects</h3>
-								<div class="post-meta">
+								<div class="body-publication">
 									<ul>
 										<li>Peng Song, Bailin Deng, Ziqi Wang, Zhichao Dong, Wei Li, Chi-Wing Fu, and Ligang Liu</li>
 										<li>ACM Transactions on Graphics (Proc. of <b>SIGGRAPH</b>), 2016
@@ -480,7 +469,7 @@
 
 							<div class="col-lg-8 col-md-8 publicationColtext">
 								<h3 class="post-title">Hand-Posture-Augmented Multitouch Interactions for Exploratory Visualization</h3>
-								<div class="post-meta">
+								<div class="body-publication">
 									<ul>
 										<li>Peng Song*, Xiaoqi Yan*, Wooi Boon Goh, Alex Qiang Chen, and Chi-Wing Fu (* joint 1st authors)</li>
 										<li><b>SIGGRAPH Asia</b> Technical Brief, 2016</li>
@@ -497,12 +486,9 @@
 
 
 					<!--2015-->
-					<div class="row">
-						<div class="col-lg-12 col-md-12">
-							<br>
-							<h2 id="year2015">2015</h2>
-							<hr>
-						</div>
+					<div class="col-lg-12 col-md-12">
+						<h2 id="year2015">2015</h2>
+						<hr>
 					</div>
 
 					<!-- 2015-SIGGRAPH-InterlockFurniture -->
@@ -516,7 +502,7 @@
 
 							<div class="col-lg-8 col-md-8 publicationColtext">
 								<h3 class="post-title">Computational Interlocking Furniture Assembly</h3>
-								<div class="post-meta">
+								<div class="body-publication">
 									<ul>
 										<li>Chi-Wing Fu*, Peng Song*, Xiaoqi Yan, Lee Wei Yang, Pradeep Kumar Jayaraman, and Daniel Cohen-Or(* joint 1st authors)</li>
 										<li>ACM Transactions on Graphics (Proc. of <b>SIGGRAPH</b>), 2015
@@ -545,7 +531,7 @@
 
 							<div class="col-lg-8 col-md-8 publicationColtext">
 								<h3 class="post-title">Printing 3D Objects with Interlocking Parts</h3>
-								<div class="post-meta">
+								<div class="body-publication">
 									<ul>
 										<li>Peng Song, Zhongqi Fu, Ligang Liu, and Chi-Wing Fu</li>
 										<li>Computer Aided Geometric Design (Proc. of <b>GMP</b>), 2015
@@ -564,12 +550,9 @@
 
 
 					<!--2014-->
-					<div class="row">
-						<div class="col-lg-12 col-md-12">
-							<br>
-							<h2 id="year2014">2014</h2>
-							<hr>
-						</div>
+					<div class="col-lg-12 col-md-12">
+						<h2 id="year2014">2014</h2>
+						<hr>
 					</div>
 
 					<!-- 2014-AAG-RFAssembly -->
@@ -584,7 +567,7 @@
 
 							<div class="col-lg-8 col-md-8 publicationColtext">
 								<h3 class="post-title">Computational Design and Construction of Notch-free Reciprocal Frame Structures</h3>
-								<div class="post-meta">
+								<div class="body-publication">
 									<ul>
 										<li>Nicolas Mellado, Peng Song, Xiaoqi Yan, Chi-Wing Fu, and Niloy J. Mitra</li>
 										<li>Advances in Architectural Geometry (<b>AAG</b>), 2014</li>
@@ -600,12 +583,9 @@
 					</div>
 
 					<!--2013-->
-					<div class="row">
-						<div class="col-lg-12 col-md-12">
-							<br>
-							<h2 id="year2013">2013</h2>
-							<hr>
-						</div>
+					<div class="col-lg-12 col-md-12">
+						<h2 id="year2013">2013</h2>
+						<hr>
 					</div>
 
 					<!-- 2013-SIGGRAPH-ReciprocalFrame -->
@@ -620,7 +600,7 @@
 
 							<div class="col-lg-8 col-md-8 publicationColtext">
 								<h3 class="post-title">Reciprocal Frame Structures Made Easy</h3>
-								<div class="post-meta">
+								<div class="body-publication">
 									<ul>
 										<li>Peng Song*, Chi-Wing Fu*, Prashant Goswami, Jianmin Zheng, Niloy J. Mitra, and Daniel Cohen-Or(* joint 1st authors)</li>
 										<li>ACM Transactions on Graphics (Proc. of <b>SIGGRAPH</b>), 2013
@@ -648,7 +628,7 @@
 
 							<div class="col-lg-8 col-md-8 publicationColtext">
 								<h3 class="post-title">Double-sided 2.5D Graphics</h3>
-								<div class="post-meta">
+								<div class="body-publication">
 									<ul>
 										<li>Chih-Kuo Yeh, Peng Song, Peng-Yen Lin, Chi-Wing Fu, Chao-Hung Lin, and Tong-Yee Lee</li>
 										<li>IEEE Transactions on Visualization and Computer Graphics (<b>TVCG</b>), 2013</li>
@@ -665,13 +645,12 @@
 
 
 					<!--2012-->
-					<div class="row">
-						<div class="col-lg-12 col-md-12">
-							<br>
-							<h2 id="year2012">2012</h2>
-							<hr>
-						</div>
+					<div class="col-lg-12 col-md-12">
+						<h2 id="year2012">2012</h2>
+						<hr>
 					</div>
+
+					<!-- 2012-SIGAsia-InterlockPuzzle -->
 					<div class="row publicationRow">
 						<div class="post">
 							<div class="col-lg-4 col-md-4 publicationColpic">
@@ -683,7 +662,7 @@
 
 							<div class="col-lg-8 col-md-8 publicationColtext">
 								<h3 class="post-title">Recursive Interlocking Puzzles</h3>
-								<div class="post-meta">
+								<div class="body-publication">
 									<ul>
 										<li>Peng Song, Chi-Wing Fu, and Daniel Cohen-Or</li>
 										<li>ACM Transactions on Graphics (Proc. of <b>SIGGRAPH Asia</b>), 2012</li>
@@ -711,7 +690,7 @@
 
 							<div class="col-lg-8 col-md-8 publicationColtext">
 								<h3 class="post-title">A Handle Bar Metaphor for Virtual Object Manipulation with Mid-Air Interaction</h3>
-								<div class="post-meta">
+								<div class="body-publication">
 									<ul>
 										<li>Peng Song, Wooi Boon Goh, William Hutama, Chi-Wing Fu, and Xiaopei Liu</li>
 										<li>ACM Conference on Human Factors in Computing Systems (<b>CHI</b>), 2012
@@ -739,7 +718,7 @@
 
 							<div class="col-lg-8 col-md-8 publicationColtext">
 								<h3 class="post-title">Brush-and-Drag: A Multi-touch Interface For Photo Triaging</h3>
-								<div class="post-meta">
+								<div class="body-publication">
 									<ul>
 										<li>Seon Joo Kim, Hongwei Ng, Stefan Winkler, Peng Song, and Chi-Wing Fu
 										</li>
@@ -757,12 +736,9 @@
 
 
 					<!--2011-->
-					<div class="row">
-						<div class="col-lg-12 col-md-12">
-							<br>
-							<h2 id="year2011">2011</h2>
-							<hr>
-						</div>
+					<div class="col-lg-12 col-md-12">
+						<h2 id="year2011">2011</h2>
+						<hr>
 					</div>
 
 					<!-- 2011-CHI-WYSIWYF -->
@@ -776,7 +752,7 @@
 
 							<div class="col-lg-8 col-md-8 publicationColtext">
 								<h3 class="post-title">WYSIWYF: Exploring and Annotating Volume Data with a Tangible Handheld Device</h3>
-								<div class="post-meta">
+								<div class="body-publication">
 									<ul>
 										<li>Peng Song, Wooi Boon Goh, Chi-Wing Fu, Qiang Meng, and Pheng-Ann Heng</li>
 										<li>ACM Conference on Human Factors in Computing Systems (<b>CHI</b>), 2011</li>
@@ -802,7 +778,7 @@
 
 							<div class="col-lg-8 col-md-8 publicationColtext">
 								<h3 class="post-title">Distinguishing Multiple Smart-Phone Interactions on a Multi-touch Wall Display using Tilt Correlation</h3>
-								<div class="post-meta">
+								<div class="body-publication">
 									<ul>
 										<li>William Hutama, Peng Song, Chi-Wing Fu, and Wooi Boon Goh</li>
 										<li>ACM Conference on Human Factors in Computing Systems (<b>CHI</b>), 2011</li>
@@ -819,12 +795,9 @@
 
 
 					<!--2010-->
-					<div class="row">
-						<div class="col-lg-12 col-md-12">
-							<br>
-							<h2 id="year2010">2010</h2>
-							<hr>
-						</div>
+					<div class="col-lg-12 col-md-12">
+						<h2 id="year2010">2010</h2>
+						<hr>
 					</div>
 
 					<!-- 2010-TVC-MultiViewStereo -->
@@ -839,7 +812,7 @@
 
 							<div class="col-lg-8 col-md-8 publicationColtext">
 								<h3 class="post-title">Volumetric Stereo and Silhouette Fusion for Image-based Modeling</h3>
-								<div class="post-meta">
+								<div class="body-publication">
 									<ul>
 										<li>Peng Song, Xiaojun Wu, and Michael Yu Wang</li> <br>
 										<li>The Visual Computer, 2010 </li>
@@ -867,7 +840,7 @@
 
 							<div class="col-lg-8 col-md-8 publicationColtext">
 								<h3 class="post-title">Expansion-Based Depth Map Estimation for Multi-View Stereo</h3>
-								<div class="post-meta">
+								<div class="body-publication">
 									<ul>
 										<li>Peng Song, Xiaojun Wu, Michael Yu Wang, and Jianhuang Wu</li> <br>
 										<li>IEEE/RSJ International Conference on Intelligent Robots and Systems (<b>IROS</b>), 2010 </li>
@@ -882,6 +855,8 @@
 					</div>
 
 				</div>
+
+
 			</div>
 		</div>
 	</div>

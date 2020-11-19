@@ -4,6 +4,14 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!-->
 <html class="no-js">
+  <script>
+    function displayCounting() {
+      var counting = document.getElementById('busuanzi_value_site_uv');
+      console.log(counting);
+    };
+  
+  </script>
+
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -41,7 +49,8 @@
 
 </head>
 
-<body id="body">
+<body id="body" onload="displayCounting();">
+
 
   <!-- Header Start -->
   <header class="navigation">
@@ -60,7 +69,7 @@
                   <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="index.html" style="padding: 6px -12px 30px 0px;">
-                  <img src="supp/Home/CGL_Logo.jpg" alt="Logo">
+                  <img src="supp/Home/CGL_Logo.jpg" alt="Logo" class="CGLlogo">
                 </a>
               </div>
               <!-- Collect the nav links, forms, and other content for toggling -->
@@ -68,7 +77,7 @@
                 <ul class="nav navbar-nav navbar-right">
                   <li><a href="index.html">Home</a></li>
                   <li><a href="people.html">People</a></li>
-                  <!--<li><a href="research.html">Research</a></li>-->
+                  <li><a href="research.html">Research</a></li>
                   <li><a href="publication.html">Publications</a></li>
                   <li><a href="teaching.html">Teaching</a></li>
                   <!--<li><a href="gallery.html">Gallery</a></li>-->
@@ -164,12 +173,12 @@
 
     <div class="col-lg-12 col-md-12 col-sm-12">
       <br><br>
-      <p style="font-size:17px">
+      <p style="font-size:17px; text-align: justify">
         Welcome to the Computer Graphics Laboratory (CGL) at the <a href=https://istd.sutd.edu.sg/ target="_blank">Information Systems Technology and
         Design Pillar</a> (ISTD), <a href=https://www.sutd.edu.sg target="_blank">Singapore University of Technology and Design</a> (SUTD), directed by <a href="people.html">Prof. Peng Song</a>.
       </p>
 
-      <p style="font-size:17px">
+      <p style="font-size:17px; text-align: justify">
         CGL does research in the general area of geometric computing, with a focus on modeling, processing, design and
         fabrication of digital 3D geometry.
         Our goal is to understand fundamental principles of geometric computing, study efficient representations and data structures of complex geometry,
@@ -232,7 +241,9 @@
   <script src="utility/js/jquery/jquery.form.js"></script>
   <script src="utility/js/jquery/jquery.validate.min.js"></script>
 
-
+   <!-- counting -->
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+  </script>
 
   <!-- Google Map -->
   <!-- <script src="utility/plugins/google-map/map.js"></script>
