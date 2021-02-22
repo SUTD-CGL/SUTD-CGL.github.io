@@ -3203,10 +3203,233 @@ a:visited { text-decoration: none;color: #538ac5}
 
 
 
+/* /////////////////////////////////////////////////////////////////////////////// */
+/* css for news page (this news page includes pictures and has not been activated now (named "event.html"))*/
+
+/* control the horizontal gap size between the news */
+.newsRow
+{
+  margin-bottom: 40px; 
+  margin-top: 5px;
+  padding-left: 2%;
+}
+
+/* control the vertical gap size between the news */
+.newsColpic
+{
+  padding-right: 0px; 
+}
+
+.newsColtext
+{
+  padding-left: 15px; 
+  font-size: 100%;
+}
+
+.newsColtext .post-title
+{
+  font-size: 134%;
+}
+
+/* news main body */
+.post .body-news ul li {
+  display: inline-block;
+  color: #909090;
+  margin-right: 20px;
+  font-size: 14.5px;
+  letter-spacing: 0.5px;
+  white-space: pre-line;
+}
+
+.post .body-news {
+  font-size: 15px;
+  margin-top: 5px;
+}
+
+.post .body-news ul li a {
+  color: #909090;
+}
+
+.post .body-news ul li a:hover {
+  color: #655e7a;
+}
+
+.post .body-news .post-author {
+  color: #000;
+}
+
+
+/* news image size auto fit */
+.img-responsive-news {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+/* size and border of news img */
+.post .post-media.post-thumb .img-responsive-news {
+  width: 260px;
+  height: auto;
+  border: solid;
+  padding: 4px;
+  /*border-color: rgba(255,255,255,1) !no border; 
+  border-width:0px !no border;*/
+  border-color:rgba(200,200,200,1) !important; 
+  border-width:1px !important;
+}
+
+
+/* shadow of news img */
+.myshadow_news
+{
+ /* -webkit-box-shadow: 5px 5px 3px -1px rgba(255,255,255,1);
+-moz-box-shadow: 5px 5px 3px -1px rgba(255,255,255,1);
+box-shadow: 5px 5px 3px -1px rgba(255,255,255,1);*/
+-webkit-box-shadow: 3px 3px 2px -1px rgba(210,210,210,1);
+-moz-box-shadow: 3px 3px 2px -1px rgba(210,210,210,1);
+box-shadow: 3px 3px 2px -1px rgba(210,210,210,1);
+}
+
+
+/* /////////////////////////////////////////////////////////////////////////////// */
+/* css for peng song personal page */
+
+/* control the horizontal gap size between the pengsong_personal info */
+.pengsongRow
+{
+  margin-bottom: 40px; 
+  margin-top: 5px;
+  /* padding-left: 2%; */
+}
+
+/* control the vertical gap size between the pengsong_personal info */
+.pengsongColpic
+{
+  padding-right: 0px; 
+}
+
+.pengsongColtext
+{
+  padding-left: 25px; 
+  font-size: 100%;
+}
+
+.pengsongColtext .post-title
+{
+  font-size: 170%;
+}
+
+.pengsongColtext h4
+{
+  font-size: 145%;
+  margin-top: 20px;
+  margin-bottom: 6px; 
+}
+
+
+/* pengsong personal info main body */
+.post .body-pengsong ul li {
+  /* display: inlblock; */
+  color: #909090;
+  margin-right: 10px;
+  margin-top: 2px;
+  margin-bottom: 4px; 
+  font-size: 17px;
+  text-align: justify;
+  list-style-type: disc;
+  /* font-size: 14.5px; */
+  letter-spacing: 0.5px;
+  white-space: pre-line;
+  list-style-position: inside;
+}
+
+/* adjust the distance betweene the list bullet point and the list text */
+.post .body-pengsong ul li span {
+  position: relative;
+  left: -5px;
+}
+
+/* pengsong personal info main body */
+.post .body-pengsong p {
+  display: inline-block;
+  color: #909090;
+  margin-right: 10px;
+  font-size: 17px;
+  text-align: justify;
+  /* font-size: 14.5px; */
+  letter-spacing: 0.5px;
+  /* white-space: pre-line; */
+}
 
 
 
+.post .body-pengsong {
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+/* .post .body-pengsong ul li a {
+  color: #909090;
+}
+
+.post . ul li a:hover {
+  color: #655e7a;
+}
+
+.post .body-pengsong .post-author {
+  color: #000;
+} */
 
 
+/* pengsong image size auto fit */
+.img-responsive-pengsong {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+/* size and border of pengsong img */
+.post .post-media.post-thumb .img-responsive-pengsong {
+  width: 260px;
+  height: auto;
+  border: solid;
+  padding: 4px;
+  /*border-color: rgba(255,255,255,1) !no border; 
+  border-width:0px !no border;*/
+  border-color:rgba(200,200,200,1) !important; 
+  border-width:1px !important;
+}
+
+
+/* shadow of pengsong img */
+.myshadow_pengsong
+{
+ /* -webkit-box-shadow: 5px 5px 3px -1px rgba(255,255,255,1);
+-moz-box-shadow: 5px 5px 3px -1px rgba(255,255,255,1);
+box-shadow: 5px 5px 3px -1px rgba(255,255,255,1);*/
+-webkit-box-shadow: 3px 3px 2px -1px rgba(210,210,210,1);
+-moz-box-shadow: 3px 3px 2px -1px rgba(210,210,210,1);
+box-shadow: 3px 3px 2px -1px rgba(210,210,210,1);
+}
+
+/* /////////////////////////////////////////////////////////////////////////////// */
+/* css for the news preview on the index.html*/
+.news_preview li {
+  color: #7b7b7b;
+  font-family: "Roboto", sans-serif;
+  margin-top: 2px;
+  margin-bottom: 6px; 
+  font-size:16px;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////// */
+/* css for the news (pure text)*/
+.news_pureText li {
+  color: #7b7b7b;
+  font-family: "Roboto", sans-serif;
+  margin-top: 2px;
+  margin-bottom: 6px; 
+  font-size:16px;
+}
 
 
