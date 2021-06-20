@@ -150,11 +150,10 @@
 					<aside class="sidebar">
 						<div class="list-group" id="mywidget">
 							<a class="list-group-item heading">Research</a>
-							<a href="research.html" class="list-group-item">Architectural Geometry</a>
-							<a href="research_mechanism.html" class="list-group-item">Mechanism Design</a>
-							<a href="research_interlock.html" class="list-group-item">Interlocking Method</a>
+							<a href="research.html" class="list-group-item">Computational Design</a>
+							<a href="research_robotics.html" class="list-group-item">3D Printable Robotics</a>
 							<a href="research_fabrication.html" class="list-group-item">Assembly-based Fabrication</a>
-							<a href="research_material.html" class="list-group-item">Smart Materials</a>
+							<!--<a href="research_geometry.html" class="list-group-item">Geometry Processing</a>-->
 						</div>
 					</aside>
 				</div>
@@ -167,22 +166,169 @@
 						<h2 class="post-title">Assembly-based Fabrication</h2>
 
 						<div class="post-content post-excerpt">
-							<p style="font-size:17px; text-align: justify">
-							 Modern digital manufacturing techniques, such as 3D printing, CNC milling, and laser cutting, enable producing a physical copy of a given 2D/3D shape precisely and conveniently.
-							 However, each of these techniques has its own limitations and constraints, making it impossible or undesirable to manufacture complex and/or large 3D shapes as a single monolithic piece. 						 
-							</p>
 
-							<p style="font-size:17px; text-align: justify">
-							 Assembly-based fabrication addresses the challenge by representing or approximating the 3D shape with a set of simpler and smaller parts that satisfy the fabrication constraints. 
-							 Additional benefits include reducing material waste, increasing manufacturing efficiency, and improving object surface quality.		
-							 This topic focuses on fabrication-aware shape decomposition/approximation approaches for assembly-based fabrication.
-							</p>
+						<p style="font-size:17px; text-align: justify">
+						Modern digital manufacturing techniques, such as 3D printing, CNC milling, laser cutting, and robotic fabrication, enable producing a physical copy of a given 2D/3D shape precisely and conveniently. However, each of these techniques has its own limitations and constraints, making it impossible or undesirable to manufacture complex and/or large 3D shapes as a single monolithic piece.
+					    </p>
+
+					    <p style="font-size:17px; text-align: justify">
+						Assembly-based fabrication addresses the challenge by representing or approximating the 3D shape with a set of simpler and/or smaller parts that can be fabricated and physically assembled.
+						Additional benefits include reducing material waste, increasing manufacturing efficiency, facilitating maintenance, and saving storage space by disassembly.  
+						</p>
+
+ 						<p style="font-size:17px; text-align: justify">
+						In this topic,  we study fundamental research problems in assembly-based fabrication. We are particularly interested in computational analysis of various aspects of assemblies such as <b>structural stability</b>, <b>assembly planning</b>, <b>efficient packing</b>, and <b>reconfigurability</b>, as well as computational design of assemblies that are desirable in these aspects.
+					    </p>
+
 						</div>
 
 					</div>
 
 
 					<h2 >Publications</h2>
+
+
+					<!-- 2021-SIGGRAPH-ConeJoint -->
+					<div class="row publicationRow">
+						<div class="post">
+							<div class="col-lg-4 col-md-4 researchpublicationColpic">
+								<div class="post-media post-thumb ">
+									<a> <img class="img-responsive-publication myshadow_publication" src="supp/Publication/images/2021-SIGGRAPH-ConeJoint.jpg" alt=""> </a>
+								</div>
+							</div>
+
+							<div class="col-lg-8 col-md-8 publicationColtext">
+								<h3 class="post-title">MOCCA: Modeling and Optimizing Cone-joints for Complex Assemblies</h3>
+								<div class="body-publication">
+									<ul>
+										<li>Ziqi Wang, Peng Song, and Mark Pauly</li>
+										<li>ACM Transactions on Graphics (Proc. of <b>SIGGRAPH</b>), 2021</li>
+									</ul>
+								</div>
+							    <div class="post-content">
+								    <a href="supp/Publication/papers/2021-SIGGRAPH-ConeJoint.pdf">Paper</a> &nbsp;
+								    <a href="https://youtu.be/5TMRGEGkCsE">Video</a> &nbsp;
+								    <a href="https://youtu.be/06Zd4NOYOQQ">Fast Forward</a> &nbsp;
+								    <!--<a href="https://onlinelibrary.wiley.com/doi/10.1111/cgf.13939">Wiley Online Library</a>-->
+							    </div>
+							</div>
+						</div>
+					</div>
+
+
+					<!-- 2021-EG-AssemblySurvey -->
+					<div class="row publicationRow">
+						<div class="post">
+							<div class="col-lg-4 col-md-4 researchpublicationColpic">
+								<div class="post-media post-thumb ">
+									<a> <img class="img-responsive-publication myshadow_publication" src="supp/Publication/images/2021-EG-AssemblySurvey.jpg" alt=""> </a>
+								</div>
+							</div>
+
+							<div class="col-lg-8 col-md-8 publicationColtext">
+								<h3 class="post-title">State of the Art on Computational Design of Assemblies with Rigid Parts</h3>
+								<div class="body-publication">
+									<ul>
+										<li>Ziqi Wang, Peng Song, and Mark Pauly</li>
+										<li>Computer Graphics Forum (Proc. of <b>Eurographics</b>), 2021</li>
+									</ul>
+								</div>
+							    <div class="post-content">
+							    	<a href="supp/Publication/papers/2021-EG-AssemblySurvey.pdf">Paper</a> &nbsp;
+							    	<a href="https://www.youtube.com/watch?v=4fOT2NiKI-8">Presentation</a> &nbsp;
+							    	<a href="https://www.youtube.com/watch?v=WlehNzYpXAY">Fast Forward</a> &nbsp;
+								    <!--<a href="https://youtu.be/QonwqZMrwHY">Video</a> &nbsp;-->
+								    <!--<a href="https://onlinelibrary.wiley.com/doi/10.1111/cgf.13939">Wiley Online Library</a>-->
+							    </div>
+							</div>
+						</div>
+					</div>
+
+
+					<!-- 2019-SIGAsia-TopoInterlock -->
+					<div class="row publicationRow">
+						<div class="post">
+							<div class="col-lg-4 col-md-4 researchpublicationColpic">
+								<div class="post-media post-thumb ">
+									<a> <img class="img-responsive-publication myshadow_publication" src="supp/Publication/images/2019-SIGAsia-TopoInterlock.jpg" alt=""> </a>
+								</div>
+							</div>
+
+							<div class="col-lg-8 col-md-8 publicationColtext">
+								<h3 class="post-title">Design and Structural Optimization of Topological Interlocking Assemblies</h3>
+								<div class="body-publication">
+									<ul>
+										<li>Ziqi Wang, Peng Song, Florin Isvoranu, and Mark Pauly</li>
+										<li>ACM Transactions on Graphics (Proc. of <b>SIGGRAPH Asia</b>), 2019</li>
+									</ul>
+								</div>
+								<div class="post-content">
+									<a href="https://lgg.epfl.ch/publications/2019/Topological_Interlocking/index.php" target="_blank">Homepage</a> &nbsp;
+									<a href="supp/Publication/papers/2019-SIGAsia-TopoInterlock.pdf">Paper</a> &nbsp;
+									<a href="https://youtu.be/nh3w058spVM">Video</a>  &nbsp;
+									<a href="https://dl.acm.org/citation.cfm?id=3356489"> ACM Portal</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<!-- 2018-SIGAsia-DESIA -->
+					<div class="row publicationRow">
+						<div class="post">
+							<div class="col-lg-4 col-md-4 researchpublicationColpic">
+								<div class="post-media post-thumb">
+									<a> <img class="img-responsive-publication myshadow_publication" src="supp/Publication/images/2018-SIGAsia-DESIA.jpg" alt="">
+									</a>
+								</div>
+							</div>
+
+							<div class="col-lg-8 col-md-8 publicationColtext">
+								<h3 class="post-title">DESIA: A General Framework for Designing Interlocking Assemblies</h3>
+								<div class="body-publication">
+									<ul>
+										<li>Ziqi Wang, Peng Song, and Mark Pauly</li>
+										<li>ACM Transactions on Graphics (Proc. of <b>SIGGRAPH Asia</b>), 2018</li>
+									</ul>
+								</div>
+								<div class="post-content">
+									<a href="https://lgg.epfl.ch/publications/2018/DESIA/index.php" target="_blank">Homepage</a> &nbsp;
+									<a href="supp/Publication/papers/2018-SIGAsia-DESIA.pdf">Paper</a> &nbsp;
+									<a href="https://youtu.be/znXxbTV6Xsw">Video</a> &nbsp;
+									<a href="https://dl.acm.org/citation.cfm?id=3275034"> ACM Portal</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<!-- 2017-SIGAsia-ReconfigFurniture -->
+					<div class="row publicationRow">
+						<div class="post">
+							<div class="col-lg-4 col-md-4 researchpublicationColpic">
+								<div class="post-media post-thumb">
+									<a> <img class="img-responsive-publication myshadow_publication" src="supp/Publication/images/2017-SIGAsia-ReconfigFurniture.jpg" alt="">
+									</a>
+								</div>
+							</div>
+
+							<div class="col-lg-8 col-md-8 publicationColtext">
+								<h3 class="post-title">Reconfigurable Interlocking Furniture</h3>
+								<div class="body-publication">
+									<ul>
+										<li>Peng Song*, Chi-Wing Fu*, Yueming Jin, Hongfei Xu, Ligang Liu, Pheng-Ann Heng, and Daniel Cohen-Or (* joint 1st authors)</li>
+										<li>ACM Transactions on Graphics (Proc. of <b>SIGGRAPH Asia</b>), 2017</li>
+									</ul>
+								</div>
+								<div class="post-content">
+									<a href="supp/Publication/projects/2017-SIGAsia-ReconfigFurniture/index.htm" target="_blank">Homepage</a> &nbsp;
+									<a href="supp/Publication/papers/2017-SIGAsia-ReconfigFurniture_lowres.pdf"> Paper</a> &nbsp;
+									<a href="https://youtu.be/guua7fOAHuw">Video</a> &nbsp;
+									<a href="https://dl.acm.org/citation.cfm?id=3130803"> ACM Portal</a>
+								</div>
+							</div>
+						</div>
+					</div>
 
 
 					<!-- 2016-SIGGRAPH-CofiFab -->
@@ -214,8 +360,37 @@
 					</div>
 
 
+					<!-- 2015-SIGGRAPH-InterlockFurniture -->
+					<!--<div class="row publicationRow">
+						<div class="post">
+							<div class="col-lg-4 col-md-4 researchpublicationColpic">
+								<div class="post-media post-thumb">
+									<a> <img class="img-responsive-publication myshadow_publication" src="supp/Publication/images/2015-SIGGRAPH-InterlockFurniture.jpg" alt=""></a>
+								</div>
+							</div>
+
+							<div class="col-lg-8 col-md-8 publicationColtext">
+								<h3 class="post-title">Computational Interlocking Furniture Assembly</h3>
+								<div class="body-publication">
+									<ul>
+										<li>Chi-Wing Fu*, Peng Song*, Xiaoqi Yan, Lee Wei Yang, Pradeep Kumar Jayaraman, and Daniel Cohen-Or(* joint 1st authors)</li>
+										<li>ACM Transactions on Graphics (Proc. of <b>SIGGRAPH</b>), 2015
+										</li>
+									</ul>
+								</div>
+								<div class="post-content">
+									<a href="http://www.cse.cuhk.edu.hk/~cwfu/papers/interlockfurniture/index.html" target="_blank">Homepage</a> &nbsp;
+									<a href="supp/Publication/papers/2015-SIGGRAPH-InterlockFurniture.pdf">Paper</a> &nbsp;
+									<a href="https://youtu.be/0s1qlB5wHRU">Video</a> &nbsp;
+									<a href="http://dl.acm.org/citation.cfm?id=2766892">ACM Portal</a>
+								</div>
+							</div>
+						</div>
+					</div>-->
+
+
 					<!-- 2015-GMP-InterlockObject -->
-					<div class="row publicationRow">
+					<!--<div class="row publicationRow">
 						<div class="post">
 							<div class="col-lg-4 col-md-4 researchpublicationColpic">
 								<div class="post-media post-thumb">
@@ -241,7 +416,7 @@
 								</div>
 							</div>
 						</div>
-					</div>
+					</div>-->
 
 
 

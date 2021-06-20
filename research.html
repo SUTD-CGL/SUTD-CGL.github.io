@@ -155,11 +155,10 @@ else {
 					<aside class="sidebar">
 						<div class="list-group" id="mywidget">
 							<a class="list-group-item heading">Research</a>
-							<a href="research.html" class="list-group-item">Architectural Geometry</a>
-							<a href="research_mechanism.html" class="list-group-item">Mechanism Design</a>
-							<a href="research_interlock.html" class="list-group-item">Interlocking Method</a>
+							<a href="research.html" class="list-group-item">Computational Design</a>
+							<a href="research_robotics.html" class="list-group-item">3D Printable Robotics</a>
 							<a href="research_fabrication.html" class="list-group-item">Assembly-based Fabrication</a>
-							<a href="research_material.html" class="list-group-item">Smart Materials</a>
+							<!--<a href="research_geometry.html" class="list-group-item">Geometry Processing</a>-->
 						</div>
 					</aside>
 				</div>
@@ -169,10 +168,22 @@ else {
 				<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
 					<div class="post post-single">
 
-						<h2 class="post-title">Architectural Geometry</h2>
+						<h2 class="post-title">Computational Design</h2>
 
 						<div class="post-content post-excerpt">
+
 							<p style="font-size:17px; text-align: justify">
+							Designers traditionally rely on intuition and experience to solve design problems. Computational design is a paradigm in which design problems are formulated mathematically and solved by computational techniques <sup><a href="https://koyama.xyz/courses/chi2021-computational-design/">[1]</a></sup>. The formulated design problem takes the form of optimization in most cases, and the optimization is performed as the process of automatically searching for the best design among many options. 
+							<!--This topic has been actively studied in computer graphics and human computational interaction, and its application domains include visual design, personal fabrication, and -->
+							</p>
+
+							<p style="font-size:17px; text-align: justify">
+							In this topic, we focus on computational design of physical artifacts. The goal is to develop computational methods and tools that enable users to design artifacts according to their high-level specifications, e.g., on the appearance and/or functionality. To achieve this goal, our research efforts are devoted to <b>mathematical formulation</b> of design problems, <b>data structures</b> for efficient representation of designs, <b>simulation</b> for rapid evaluation of designs, and <b>optimization algorithms</b> to create desirable designs.
+							</p>
+
+				
+							
+							<!--<p style="font-size:17px; text-align: justify">
 							Discrete architecture is an emerging architectural paradigm that designs architecture as a combinatorial organization of a discrete set of architectural parts (e.g., blocks, rods, plates).
 							Benefits of discrete architecture include reducing the material wastage, easing automatic assembly with robots, and facilitating disassembly of buildings.
 							</p>
@@ -180,64 +191,93 @@ else {
 							<p style="font-size:17px; text-align: justify">
 							This topic focuses on the computational analysis and design of free-form discrete architecture.
 							The goal is to ease the fabrication and assembly of architecture by incorporating various architectural aspects at the computational design stage, including parts geometry, parts joining, assembly plan, and structural stability.
-							<!--The long-term goal is to design discrete archicture that can be automatically constructed using robotic assembly.-->
 							</p>
+							-->
 						</div>
 
 					</div>
 
 					<h2>Publications</h2>
 
-					<!-- 2019-SIGAsia-TopoInterlock -->
+
+					<!-- 2020-EG-NonCircularGear -->
 					<div class="row publicationRow">
 						<div class="post">
 							<div class="col-lg-4 col-md-4 researchpublicationColpic">
 								<div class="post-media post-thumb ">
-									<a> <img class="img-responsive-publication myshadow_publication" src="supp/Publication/images/2019-SIGAsia-TopoInterlock.jpg" alt=""> </a>
+									<a> <img class="img-responsive-publication myshadow_publication" src="supp/Publication/images/2020-EG-NonCircularGear.jpg" alt=""> </a>
 								</div>
 							</div>
 
 							<div class="col-lg-8 col-md-8 publicationColtext">
-								<h3 class="post-title">Design and Structural Optimization of Topological Interlocking Assemblies</h3>
-								<div class="body-publication">
+								<h3 class="post-title">Computational Design and Optimization of Non-Circular Gears</h3>
+								<div class="post-meta">
 									<ul>
-										<li>Ziqi Wang, Peng Song, Florin Isvoranu, and Mark Pauly</li>
-										<li>ACM Transactions on Graphics (Proc. of <b>SIGGRAPH Asia</b>), 2019</li>
+										<li>Hao Xu*, Tianwen Fu*, Peng Song, Mingjun Zhou, Chi-Wing Fu, and Niloy J. Mitra (* joint 1st authors)</li>
+										<li>Computer Graphics Forum (Proc. of <b>Eurographics</b>), 2020</li>
 									</ul>
 								</div>
-								<div class="post-content">
-									<a href="https://lgg.epfl.ch/publications/2019/Topological_Interlocking/index.php" target="_blank">Homepage</a> &nbsp;
-									<a href="supp/Publication/papers/2019-SIGAsia-TopoInterlock.pdf">Paper</a> &nbsp;
-									<a href="https://youtu.be/nh3w058spVM">Video</a>  &nbsp;
-									<a href="https://dl.acm.org/citation.cfm?id=3356489"> ACM Portal</a>
-								</div>
+							    <div class="post-content">
+							    	<a href="https://appsrv.cse.cuhk.edu.hk/~haoxu/projects/compute_gear/" target="_blank">Homepage</a> &nbsp;
+								    <a href="supp/Publication/papers/2020-EG-Non-CircularGears.pdf">Paper</a> &nbsp;
+								    <a href="https://youtu.be/fhVbqKal2es">Video</a> &nbsp;
+								    <a href="https://onlinelibrary.wiley.com/doi/10.1111/cgf.13939">Wiley Online Library</a>
+							    </div>
 							</div>
 						</div>
 					</div>
 
 
-					<!-- 2014-AAG-RFAssembly -->
+					<!-- 2019-EG-3DDissection -->
 					<div class="row publicationRow">
 						<div class="post">
 							<div class="col-lg-4 col-md-4 researchpublicationColpic">
 								<div class="post-media post-thumb">
-									<a> <img class="img-responsive-publication myshadow_publication" src="supp/Publication/images/2014-AAG-RFAssembly.jpg" alt="">
+									<a> <img class="img-responsive-publication myshadow_publication" src="supp/Publication/images/2019-EG-3DDissection.jpg" alt="">
 									</a>
 								</div>
 							</div>
 
 							<div class="col-lg-8 col-md-8 publicationColtext">
-								<h3 class="post-title">Computational Design and Construction of Notch-free Reciprocal Frame Structures</h3>
+								<h3 class="post-title">Computational Design of Steady 3D Dissection Puzzles</h3>
 								<div class="body-publication">
 									<ul>
-										<li>Nicolas Mellado, Peng Song, Xiaoqi Yan, Chi-Wing Fu, and Niloy J. Mitra</li>
-										<li>Advances in Architectural Geometry (<b>AAG</b>), 2014</li>
+										<li>Keke Tang, Peng Song, Xiaofei Wang, Bailin Deng, Chi-Wing Fu, and Ligang Liu</li>
+										<li>Computer Graphics Forum (Proc. of <b>Eurographics</b>), 2019</li>
 									</ul>
 								</div>
 								<div class="post-content">
-									<a href="http://geometry.cs.ucl.ac.uk/projects/2014/rf-aag/" target="_blank">Homepage</a> &nbsp;
-									<a href="supp/Publication/papers/2014-AAG-RFAssembly.pdf"> Paper</a> &nbsp;
-									<a href="https://youtu.be/MnXrAcabcmY">Video</a>
+									<a href="supp/Publication/papers/2019-EG-3DDissection.pdf">Paper</a> &nbsp;
+									<a href="https://youtu.be/8UhUZh9fEMg">Video</a> &nbsp;
+									<a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/cgf.13638">Wiley Online Library</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- 2017-SIGAsia-Wind-upToy -->
+					<div class="row publicationRow">
+						<div class="post">
+							<div class="col-lg-4 col-md-4 researchpublicationColpic">
+								<div class="post-media post-thumb">
+									<a> <img class="img-responsive-publication myshadow_publication" src="supp/Publication/images/2017-SIGAsia-Wind-upToy.jpg" alt=""> </a>
+								</div>
+							</div>
+
+							<div class="col-lg-8 col-md-8 publicationColtext">
+								<h3 class="post-title">Computational Design of Wind-up Toys</h3>
+								<div class="body-publication">
+									<ul>
+										<li>Peng Song</i>, Xiaofei Wang, Xiao Tang, Chi-Wing Fu, Hongfei Xu, Ligang Liu,and Niloy J. Mitra</li>
+										<li>ACM Transactions on Graphics (Proc. of <b>SIGGRAPH Asia</b>), 2017</li>
+									</ul>
+								</div>
+								<div class="post-content">
+									<a href="supp/Publication/projects/2017-SIGAsia-Wind-upToy/index.htm" target="_blank">Homepage</a> &nbsp;
+									<a href="https://www.eurekalert.org/pub_releases/2017-11/afcm-ncm111717.php"> Press Release</a> &nbsp;
+									<a href="supp/Publication/papers/2017-SIGAsia-Wind-upToy_lowres.pdf"> Paper</a> &nbsp;
+									<a href="https://youtu.be/o1ZKzNVNwtU">Video</a> &nbsp;
+									<a href="https://dl.acm.org/citation.cfm?id=3130808"> ACM Portal</a> &nbsp;
 								</div>
 							</div>
 						</div>
@@ -272,6 +312,37 @@ else {
 							</div>
 						</div>
 					</div>
+
+
+					<!-- 2012-SIGAsia-InterlockPuzzle -->
+					<div class="row publicationRow">
+						<div class="post">
+							<div class="col-lg-4 col-md-4 researchpublicationColpic">
+								<div class="post-media post-thumb">
+									<a> <img class="img-responsive-publication myshadow_publication" src="supp/Publication/images/2012-SIGAsia-InterlockPuzzle.jpg" alt="">
+									</a>
+								</div>
+							</div>
+
+							<div class="col-lg-8 col-md-8 publicationColtext">
+								<h3 class="post-title">Recursive Interlocking Puzzles</h3>
+								<div class="body-publication">
+									<ul>
+										<li>Peng Song, Chi-Wing Fu, and Daniel Cohen-Or</li>
+										<li>ACM Transactions on Graphics (Proc. of <b>SIGGRAPH Asia</b>), 2012</li>
+									</ul>
+								</div>
+								<div class="post-content">
+									<a href="supp/Publication/projects/2012-SIGAsia-Interlock/index.htm" target="_blank">Homepage</a> &nbsp;
+									<a href="supp/Publication/papers/2012-SIGAsia-InterlockPuzzle.pdf">Paper</a> &nbsp;
+									<a href="https://youtu.be/zHuMs9PcCn8">Video</a> &nbsp;
+									<a href="http://dl.acm.org/citation.cfm?id=2366147">ACM Portal</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
 
 
 				</div>
