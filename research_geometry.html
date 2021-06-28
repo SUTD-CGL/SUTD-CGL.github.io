@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<script>
+
+function myresize() {
+
+if (window.innerWidth < 800) {
+  var div1 = document.getElementById('mywidget');
+  div1.style.position = "static";
+  //console.log("static");
+}
+else {
+  var container = document.getElementById('mysidebar');
+  var div1 = document.getElementById('mywidget');
+  var preWidth = container.offsetWidth;
+  div1.style.position = "fixed";
+  div1.style.width = preWidth * 0.9 + "px";
+  //console.log("fixed");
+}
+
+};
+function isPc() {
+
+if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
+  var div1 = document.getElementById('mywidget');
+
+  div1.style.position = "static";
+
+  //console.log("static");
+}
+else {
+
+  //setTimeout(fixSidebar, 3000);
+
+  var container = document.getElementById('mysidebar');
+  var div1 = document.getElementById('mywidget');
+  var preWidth = container.offsetWidth;
+  div1.style.position = "fixed";
+  div1.style.width = preWidth * 0.9 + "px";
+}
+}
+
+
+
+	function fixSidebar() {
+	}
+
+
+</script>
+
+
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="description" content="Aviato E-Commerce Template">
+	<meta name="author" content="YuchengSun PengSong">
+
+	<!-- init shadow -->
+	<link rel="stylesheet" type="text/css" href=" utility/js/shadowbox.css">
+	<script type="text/javascript" src=" utility/js/shadowbox.js"></script>
+	<script type="text/javascript">
+		Shadowbox.init();
+	</script>
+
+	<title>Research - CGL</title>
+
+	<!-- Mobile Specific Meta-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Favicon -->
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.png" />
+	<!-- bootstrap.min css -->
+	<link rel="stylesheet" href="utility/plugins/bootstrap/css/bootstrap.min.css">
+	<!-- Ionic Icon Css -->
+	<link rel="stylesheet" href="utility/plugins/Ionicons/css/ionicons.min.css">
+	<!-- animate.css -->
+	<link rel="stylesheet" href="utility/plugins/animate-css/animate.css">
+	<!-- Magnify Popup -->
+	<link rel="stylesheet" href="utility/plugins/magnific-popup/dist/magnific-popup.css">
+	<!-- Owl Carousel CSS -->
+	<link rel="stylesheet" href="utility/plugins/slick-carousel/slick/slick.css">
+	<link rel="stylesheet" href="utility/plugins/slick-carousel/slick/slick-theme.css">
+
+	<!-- Main Stylesheet -->
+	<link rel="stylesheet" href="utility/css/style.css">
+
+</head>
+
+<body id="body" onload="isPc();" onresize="myresize();">
+
+
+	<!-- Header Start -->
+	<header class="navigation">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<!-- header Nav Start -->
+					<nav class="navbar">
+						<div class="container-fluid">
+							<!-- Brand and toggle get grouped for better mobile display -->
+							<div class="navbar-header">
+								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+									data-target="#bs-example-navbar-collapse-1">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+								<a class="navbar-brand" href="index.html" style="padding: 6px -12px 30px 0px;">
+									<img src="supp/Home/CGL_Logo.jpg" alt="Logo">
+								</a>
+							</div>
+							<!-- Collect the nav links, forms, and other content for toggling -->
+							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+								<ul class="nav navbar-nav navbar-right">
+									<li><a href="index.html">Home</a></li>
+									<li><a href="people.html">People</a></li>
+									<li><a href="research.html">Research</a></li>
+									<li><a href="publication.html">Publications</a></li>
+									<li><a href="teaching.html">Teaching</a></li>
+									<!--<li><a href="gallery.html">Gallery</a></li>-->
+									<li><a href="resource.html">Resources</a></li>
+									<li><a href="joinus.html">Join Us</a></li>
+								</ul>
+							</div><!-- /.navbar-collapse -->
+						</div><!-- /.container-fluid -->
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header><!-- header close -->
+
+	<section class="page-title bg-2">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="block">
+						<h1>Research</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div class="page-wrapper">
+		<div class="container">
+
+			<div class="row">
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" id="mysidebar">
+					<aside class="sidebar">
+						<div class="list-group" id="mywidget">
+							<a class="list-group-item heading">Research</a>
+							<a href="research.html" class="list-group-item">Computational Design</a>
+							<a href="research_robotics.html" class="list-group-item">3D Printable Robotics</a>
+							<a href="research_fabrication.html" class="list-group-item">Assembly-based Fabrication</a>
+							<a href="research_geometry.html" class="list-group-item">Geometry Modeling</a>
+						</div>
+					</aside>
+				</div>
+
+
+				<!-- <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12" id="publicationSUTD"> -->
+				<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+					<div class="post post-single">
+
+						<h2 class="post-title">Geometry Modeling</h2>
+
+						<div class="post-content post-excerpt">
+							<p style="font-size:17px; text-align: justify">
+								Geometry modeling is the process of creating a 3D digital representation (i.e., a 3D model) of any object on computers. Although 3D models can be created manually, typically by artists and designers, through the use of commercial software such as 3DS Max, Maya, and Rhino, the complexity of the modeling task is generally beyond the ability of general users.
+							</p>
+
+							<p style="font-size:17px; text-align: justify">
+								In this topic, our research focuses on creating 3D models automatically by developing novel algorithms. In particular, we are interested in image-based approaches that reconstruct a 3D model from color/depth images or user sketches, as well as data-driven approaches that generate a new 3D model by making use of existing ones.
+							</p>
+						</div>
+
+					</div>
+
+					<h2>Publications</h2>
+
+					<!-- 2015-CVM-LocalVoxelizer -->
+					<div class="row publicationRow">
+						<div class="post">
+							<div class="col-lg-4 col-md-4 researchpublicationColpic">
+								<div class="post-media post-thumb">
+									<a> <img class="img-responsive-publication myshadow_publication" src="supp/Publication/images/2015-CVM-LocalVoxelizer.jpg" alt="">
+									</a>
+								</div>
+							</div>
+
+							<div class="col-lg-8 col-md-8 publicationColtext">
+								<h3 class="post-title">Local Voxelizer: A Shape Descriptor for Surface Registration</h3>
+								<div class="body-publication">
+									<ul>
+										<li>Peng Song</li> <br>
+										<li>Computational Visual Media, 2015 </li>
+									</ul>
+								</div>
+								<div class="post-content">
+									<a href="supp/Publication/papers/2015-CVM-LocalVoxelizer.pdf">Paper</a> &nbsp;
+									<a href="https://link.springer.com/article/10.1007/s41095-015-0019-z">SpringerLink</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<!-- 2010-TVC-MultiViewStereo -->
+					<div class="row publicationRow">
+						<div class="post">
+							<div class="col-lg-4 col-md-4 researchpublicationColpic">
+								<div class="post-media post-thumb">
+									<a> <img class="img-responsive-publication myshadow_publication" src="supp/Publication/images/2010-TVC-MultiViewReconstru.jpg" alt="">
+									</a>
+								</div>
+							</div>
+
+							<div class="col-lg-8 col-md-8 publicationColtext">
+								<h3 class="post-title">Volumetric Stereo and Silhouette Fusion for Image-based Modeling</h3>
+								<div class="body-publication">
+									<ul>
+										<li>Peng Song, Xiaojun Wu, and Michael Yu Wang</li> <br>
+										<li>The Visual Computer, 2010 </li>
+									</ul>
+								</div>
+								<div class="post-content">
+									<a href="supp/Publication/papers/2010-TVC-MultiViewReconstru.pdf">Paper</a> &nbsp;
+									<a href="https://youtu.be/Qdk-FWO2ccY">Video</a> &nbsp;
+									<a href="http://vision.middlebury.edu/mview/eval/">Benchmark</a> &nbsp;
+									<a href="http://link.springer.com/article/10.1007%2Fs00371-010-0429-y">SpringerLink</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<!-- 2010-IROS-DepthMap -->
+					<div class="row publicationRow">
+						<div class="post">
+							<div class="col-lg-4 col-md-4 researchpublicationColpic">
+								<div class="post-media post-thumb">
+									<a> <img class="img-responsive-publication myshadow_publication" src="supp/Publication/images/2010-IROS-DepthMap.jpg" alt="">
+									</a>
+								</div>
+							</div>
+
+							<div class="col-lg-8 col-md-8 publicationColtext">
+								<h3 class="post-title">Expansion-Based Depth Map Estimation for Multi-View Stereo</h3>
+								<div class="body-publication">
+									<ul>
+										<li>Peng Song, Xiaojun Wu, Michael Yu Wang, and Jianhuang Wu</li> <br>
+										<li>IEEE/RSJ International Conference on Intelligent Robots and Systems (<b>IROS</b>), 2010 </li>
+									</ul>
+								</div>
+								<div class="post-content">
+									<a href="supp/Publication/papers/2010-IROS-DepthMap.pdf">Paper</a> &nbsp;
+									<a href="https://ieeexplore.ieee.org/document/5651253">IEEE DL</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+		<br>
+
+	<!-- footer Start -->
+	<!--
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<p class="copyright">Copyright 2019 &copy; @SUTD <br>All rights reserved.
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	-->
+
+		<!-- 
+    Essential Scripts
+    =====================================-->
+
+		<!-- <script src="utility/js/jquery.counterup.js"></script> -->
+
+		<!-- Main jQuery -->
+
+		<script src=".//utility/js/jquery/jquery-3.4.1.min.js"></script>
+		<!-- Bootstrap 3.1 -->
+		<script src="utility/plugins/bootstrap/js/bootstrap.min.js"></script>
+		<!-- Owl Carousel -->
+		<script src="utility/plugins/slick-carousel/slick/slick.min.js"></script>
+		<!--  -->
+		<script src="utility/plugins/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+		<!-- Mixit Up JS -->
+		<script src="utility/plugins/mixitup/dist/mixitup.min.js"></script>
+		<!-- <script src="utility/plugins/count-down/jquery.lwtCountdown-1.0.js"></script> -->
+		<script src="utility/plugins/SyoTimer/build/jquery.syotimer.min.js"></script>
+
+
+		<!-- Form Validator -->
+		<script src=".//utility/js/jquery/jquery.form.js"></script>
+		<script src=".//utility/js/jquery/jquery.validate.min.js"></script>
+
+
+
+		<!-- Google Map -->
+		<!-- <script src="utility/plugins/google-map/map.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkeLMlsiwzp6b3Gnaxd86lvakimwGA6UA&callback=initMap"></script>     -->
+
+		<script src="utility/js/script.js"></script>
+
+
+
+
+
+</body>
+
+</html>
