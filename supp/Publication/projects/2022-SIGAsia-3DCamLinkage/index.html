@@ -1,0 +1,306 @@
+<!--======================================================================
+//
+// Website: 3D Cam-linkage mechanisms
+//
+// Author:  Yingjie Cheng, Peng Song
+//
+// Date: Sep 15, 2022
+//
+==========================================================================-->
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <title>3D Cam-Linkage</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <script type="text/javascript">
+    google.load("jquery", "1.3.2");
+  </script>
+  <style type="text/css">
+    body {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1100px;
+    }
+      
+    h1 {
+    font-weight: 300;
+    }
+      
+    a:link {
+      text-decoration: none;
+      color: 6464FF
+    }
+
+    a:active {
+      text-decoration: blink
+    }
+
+    a:hover {
+      text-decoration: underline;
+      color: 6464FF
+    }
+
+    a:visited {
+      text-decoration: none;
+      color: 551A8B
+    }
+  </style>
+
+
+  <!--------------------------------------------------------------------------------------------------->
+  <!--                                       Header and Photo                                       --->
+  <!--------------------------------------------------------------------------------------------------->
+
+<body data-gr-c-s-loaded="true">
+  <font size="3" >
+    <blockquote>
+      <p>
+      </p>
+      <center>
+        <table border="0">
+          <tbody>
+            <tr>
+              <td width="30"></td>
+              <td width="1200">
+                <center>
+
+                  <!--Header-->
+                  <br><br><br>
+                  <h1><span style="font-size: 25pt">Exact 3D Path Generation via 3D Cam-Linkage Mechanisms</span></h1>
+                  <br>
+
+                  <p class="authors">
+                    <span style="font-size: 15pt">
+                      Yingjie Cheng</a><sup>1,2</sup>&nbsp&nbsp
+                      <a href="https://songpenghit.github.io">Peng Song</a><sup>2</sup>&nbsp&nbsp
+                      Yukun Lu</a><sup>1,2</sup>&nbsp&nbsp
+                      Wen Jie Jeremy Chew</a><sup>2</sup>&nbsp&nbsp
+                      <a href="http://staff.ustc.edu.cn/~lgliu/">Ligang Liu</a><sup>1</sup> &nbsp
+
+                      <br><br>
+                      <sup>1</sup> <a href="http://en.ustc.edu.cn/">University of Science and Technology of China</a> &nbsp&nbsp&nbsp
+                      <sup>2</sup> <a href="https://sutd.edu.sg/">Singapore University of Technology and Design</a> &nbsp&nbsp&nbsp
+                      
+                      <br><br>
+                      <h3 class=""><span style="font-weight: normal;"><a href="https://sa2022.siggraph.org/">SIGGRAPH Asia 2022</a>, technical paper</span></h3>
+                  </span>
+                  <p class="authors">&nbsp;</p>
+                 </center>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </center>
+      <p></p>
+
+
+      <!-- Figure 1: Overview-->
+      <br>
+      <div align="center">
+        <img src="./images/Teaser.png" width="980" alt="Figure 1">
+      </div>
+      <div align="justify" width: 1200px>
+          <p class="figure">
+              <strong>Figure 1:</strong> We present a new 3D cam-linkage mechanism that can exactly generate a user-specified 3D path such as the Trefoil Knot curve shown here, driven by a single actuator (indicated by a circular arrow on the left).
+          </p>
+      </div>
+
+      <!--------------------------------------------------------------------------------------------------->
+      <!--                                            Abstract                                          --->
+      <!--------------------------------------------------------------------------------------------------->
+      
+      <br><hr><br>
+      <div align="justify" width: 1200px>
+
+        <h1>Abstract</h1>
+
+        <span style="font-size: 13pt">
+            <!--<ul>-->
+            Exact 3D path generation is a fundamental problem of designing a mechanism to make a point exactly move along a prescribed 3D path, driven by a single actuator. Existing mechanisms are insufficient to address this problem. Planar linkages and their combinations with gears and/or plate cams can only generate 2D paths while 1-DOF spatial linkages can only generate 3D paths with rather simple shapes. In this paper, we present a new 3D cam-linkage mechanism, consisting of two 3D cams and five links, for exactly generating a continuous 3D path. To design a 3D cam-linkage mechanism, we first model a 3-DOF 5-bar spatial linkage to exactly generate a prescribed 3D path and then reduce the spatial linkage’s DOFs from 3 to 1 by composing the linkage with two 3D cam-follower mechanisms. Our computational approach optimizes the 3D cam-linkage mechanism’s topology and geometry to minimize the mechanism’s total weight while ensuring smooth, collision-free, and singularity-free motion. We show that our 3D cam-linkage mechanism is able to exactly generate a continuous 3D path with arbitrary shape and a finite number of C0 points, evaluate the mechanism’s kinematic performance with 3D printed prototypes, and demonstrate that the mechanism can be generalized for exact 3D motion generation.
+        </span>
+      </div>
+
+      <BR><BR>
+
+
+
+
+      <!--------------------------------------------------------------------------------------------------->
+      <!--                                            Download                                          --->
+      <!--------------------------------------------------------------------------------------------------->
+
+      <hr>
+
+      <div align="justify">
+
+        <h1>Download </h1>
+
+        <!--Click the following link to download:-->
+        <span style="font-size: 13pt; line-height:32px">
+          <a href="download/2022-SIGAsia-3DCamLinkage.pdf"> Paper PDF</a>(~21M) <BR>
+          <a href="download/Supplementary.pdf"> Supplementary material</a>(~3M) <BR>
+          Presentation video</a> (coming soon) <br/>
+        </span>
+
+      </div>
+
+      <BR><BR>
+
+
+      <!-------------------------------------------- ------------------------------------------------------->
+      <!--                                             Video                                           --->
+      <!--------------------------------------------------------------------------------------------------->
+
+      <hr>
+
+      <h1>Video </h1>
+
+      <div id="Div3" align="center">
+      <iframe width="720" height="480" src="https://www.youtube.com/embed/tJ8jtWl72GM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+      </div>
+
+      <BR><BR><BR>
+
+      <!-- Video -->
+
+
+
+
+      <!--------------------------------------------------------------------------------------------------->
+      <!--                                            Results                                           --->
+      <!--------------------------------------------------------------------------------------------------->
+
+      <hr>
+
+      <div align="justify">
+
+          <h1>Results </h1>
+
+          <BR>
+          <div align="center"><img src="./images/mechanism_illustration.png" width="540" alt="Figure 2"></div>
+          <p class="figure">
+              <strong>Figure 2:</strong>
+              An illustration of our 3D cam-linkage mechanism, which consists
+              of five links {L<sub>i</sub>}, five link joints {J<sub>k</sub>}, two 3D cams {C<sub>j</sub>}, two cam joints
+              {B<sub>j</sub>}, one end-effector point p<sub>e</sub>, and a support structure (in grey).
+          </p>
+          <BR>
+
+          <BR>
+          <div align="center"><img src="./images/result_curve_shape.png" width="720" alt="Figure 2"></div>
+          <p class="figure">
+              <strong>Figure 3:</strong>
+              Our 3D cam-linkage mechanism exactly generates a 3D path with a variety of shapes: (a) Bézier curve, (b) Chair, (c) Puzzle Piece, and (d) Conical Rose.
+          </p>
+          <BR><BR>
+
+
+          <div align="center"><img src="./images/result_physical_kinematic.png" width="800" alt="Figure 2"></div>
+          <p class="figure">
+              <strong>Figure 4:</strong>
+              Evaluating the kinematic performance of our mechanism. (Top) Our
+              designed mechanism in front, side, and top views, respectively. (Bottom)
+              Corresponding views of our 3D printed prototype, where the generated
+              path is tracked on video images and visualized in yellow.
+          </p>
+          <BR><BR>
+
+
+          <div align="center"><img src="./images/result_manipulator.png" width="800" alt="Figure 2"></div>
+          <p class="figure">
+              <strong>Figure 5:</strong>
+              Designing and fabricating a low-cost manipulator to perform a
+              pick-and-place task by using our 3D cam-linkage mechanism.
+          </p>
+          <BR><BR>
+
+
+          <div align="center"><img src="./images/result_motion_generation.png" width="980" alt="Figure 2"></div>
+          <p class="figure">
+              <strong>Figure 6:</strong>
+              Generalizing our 3D cam-linkage mechanism for exact 3D motion
+              generation, which consists of three 3D cams and eight links.
+          </p>
+          <BR><BR>
+
+
+      </div>
+
+      <BR>
+
+
+      <!--------------------------------------------------------------------------------------------------->
+      <!--                                        Acknowledgments                                       --->
+      <!--------------------------------------------------------------------------------------------------->
+
+      <hr>
+
+      <div align="justify">
+
+        <h1>Acknowledgments </h1>
+
+        <p class="text">
+            <span style="font-size: 13pt; line-height:22px">
+                We thank the reviewers for their valuable comments, Ke Chen for
+                proofreading the paper, and Robert Ferréol for providing equations
+                of some input parametric curves. This work was supported by the
+                SUTD Start-up Research Grant (Number: SRG ISTD 2019 148), and
+                the National Natural Science Foundation of China (62025207).
+            </span>
+        </p>
+      </div>
+
+      <BR><BR>
+
+
+
+      <!--------------------------------------------------------------------------------------------------->
+      <!--                                        Acknowledgments                                       --->
+      <!--------------------------------------------------------------------------------------------------->
+
+      <hr>
+
+      <div align="justify">
+
+        <h1>Bibtex </h1>
+        <span style="font-size: 13pt; line-height:30px">
+          @article {Cheng-2022-3DCamLinkage, <br>
+          &nbsp&nbsp&nbsp author &nbsp = {Yingjie Cheng and Peng Song and Yukun Lu and Wen Jie Jeremy Chew and Ligang Liu}, <br>
+          &nbsp&nbsp&nbsp title &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp = {Exact 3D Path Generation via 3D Cam-Linkage Mechanisms}, <br>
+          &nbsp&nbsp&nbsp journal &nbsp = {ACM Transactions on Graphics (SIGGRAPH Asia 2022)}, <br>
+          &nbsp&nbsp&nbsp volume = {41}, <br>
+          &nbsp&nbsp&nbsp number = {6}, <br>
+          &nbsp&nbsp&nbsp pages &nbsp = {225:1 -- 225:13}, <br>
+          &nbsp&nbsp&nbsp year &nbsp&nbsp&nbsp&nbsp = {2022}} <br>
+
+        </span>
+      </div>
+
+      <!--<div align="justify">
+
+          <h1>Bibtex </h1>
+          <table style="font-size: 13pt; line-height:30px" align="left">
+              <caption></caption>
+              <tr><td>@</td><td>article{</td><td></td><td>Cheng-2022-3DCamLinkage,</td></tr>
+              <tr><td></td><td>title</td><td>=</td><td> {Exact 3D Path Generation via 3D Cam-Linkage Mechanisms},</td></tr>
+              <tr><td></td><td>author</td><td>=</td><td> {Yingjie Cheng and Peng Song and Yukun Lu and Wen Jie Jeremy Chew and Ligang Liu},</td></tr>
+              <tr><td></td><td>journal</td><td>=</td><td> {ACM Transactions on Graphics (SIGGRAPH Asia 2022)},</td></tr>
+              <tr><td></td><td>volume</td><td>=</td><td> {41},</td></tr>
+              <tr><td></td><td>number</td><td>=</td><td> {6},</td></tr>
+              <tr><td></td><td>pages</td><td>=</td><td> {225:1 -- 225:13},</td></tr>
+              <tr><td></td><td>year</td><td>=</td><td> {2022}}</td></tr>
+          </table>
+      </div>-->
+
+      <BR><BR><BR><BR> 
+
+
+      <!----------------------------CopyRight---------------------------->
+    </blockquote>
+  </font>
+
+</html>
