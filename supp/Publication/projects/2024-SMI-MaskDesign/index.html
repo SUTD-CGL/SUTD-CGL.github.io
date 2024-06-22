@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<!-- saved from url=(0085)https://sutd-cgl.github.io/supp/Publication/projects/2021-SIGAsia-3DCamMech/index.htm -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="./High-levelPuzzle_files/styles.css">
+    <title>Mask Design</title>
+    
+    <script type="text/javascript">
+      google.load("jquery", "1.3.2");
+    </script>
+    <style type="text/css">
+      body {
+      font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+      font-weight: 300;
+      font-size: 18px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 1100px;
+      }
+        
+      h1 {
+      font-weight: 300;
+      }
+        
+      a:link {
+        text-decoration: none;
+        color: 6464FF
+      }
+  
+      a:active {
+        text-decoration: blink
+      }
+  
+      a:hover {
+        text-decoration: underline;
+        color: 6464FF
+      }
+  
+      a:visited {
+        text-decoration: none;
+        color: 551A8B
+      }
+    </style>
+  
+  
+    <!--------------------------------------------------------------------------------------------------->
+    <!--                                       Header and Photo                                       --->
+    <!--------------------------------------------------------------------------------------------------->
+  
+  <style data-jss="" data-meta="Unthemed">
+  .App-0-1-1 {
+    top: 10px!important;
+    right: 10px!important;
+    width: 352px!important;
+    display: flex!important;
+    opacity: 0!important;
+    position: absolute!important;
+    transform: translateY(-16px)!important;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.55)!important;
+    text-align: center!important;
+    transition: opacity 200ms ease, transform 200ms ease!important;
+    user-select: none!important;
+    border-radius: 10px!important;
+    flex-direction: column!important;
+    -moz-user-select: none!important;
+  }
+  .App-0-1-1 * {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif!important;
+    -webkit-font-smoothing: antialiased!important;
+    -moz-osx-font-smoothing: grayscale!important;
+  }
+  .show-0-1-2 {
+    opacity: 1!important;
+    transform: translateY(0)!important;
+  }
+  </style></head><body data-gr-c-s-loaded="true"><div id="iki-extension" style="position: fixed; top: 0px; right: 0px; z-index: 10000;"></div>
+    <font size="3">
+      <blockquote>
+        <p>
+        </p>
+        <center>
+          <table border="0">
+            <tbody>
+              <tr>
+                <td width="30"></td>
+                <td width="1200">
+                  <center>
+  
+                    <!--Header-->
+                    <br><br><br>
+                    <h1><span style="font-size: 23pt">Computational Design of Custom-Fit PAP Masks</span></h1>
+                    <br>
+  
+                    <p class="authors">
+                      <span style="font-size: 15pt">
+                        Yukun Lu<sup>1,3</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        Yuhang Wang<sup>2,3</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="https://songpenghit.github.io/">Peng Song</a><sup>3</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="https://www.cgh.com.sg/profile/wong-hang-siang">Hang Siang Wong</a><sup>4</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="https://www.cgh.com.sg/profile/mok-yingjuan">Yingjuan Mok</a><sup>4</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="http://staff.ustc.edu.cn/~lgliu/">Ligang Liu</a><sup>1</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  
+                        <br><br>
+                        <sup>1</sup> <a href="https://www.ustc.edu.cn/">USTC</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <sup>2</sup> <a href="https://www.nuist.edu.cn/">NUIST</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <sup>3</sup> <a href="https://sutd.edu.sg/">SUTD</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <sup>4</sup> <a href="https://www.cgh.com.sg/">CGH</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        
+                        <br><br>
+                        </span></p><h3 class=""><span style="font-weight: normal;"><a href="https://smiconf.github.io/2024/">Shape Modeling International 2024</a>, full paper </span></h3>
+                    
+                    <p class="authors">&nbsp;</p>
+  
+  
+                </center></td>
+              </tr>
+            </tbody>
+          </table>
+        </center>
+        <p></p>
+  
+  
+        <!-- Figure 1: Overview-->
+        <br>
+        <div align="center">
+          <img src="./images/teaser.png" width="1060" alt="Figure 1">
+        </div>
+        <div align="justify" width:="" 1200px="">
+        <p class="figure"><strong>Figure 1:</strong> Given (a) the scanned face model of a subject, we develop an optimization-based approach to design (b&c) a PAP mask cushion that fits the face model. (d) The designed mask cushion is fabricated and assembled with a generic mask frame to form a custom-fit PAP mask for practical use. </p>
+        </div>
+  
+        <!--------------------------------------------------------------------------------------------------->
+        <!--                                            Abstract                                          --->
+        <!--------------------------------------------------------------------------------------------------->
+        
+        <br><hr><br>
+        <div align="justify" width:="" 1200px="">
+  
+          <h1>Abstract</h1>
+  
+          <span style="font-size: 13pt">
+            <!--<ul>-->
+            <p> Positive airway pressure (PAP) therapy refers to sleep disordered breathing treatment that uses a stream of compressed air to support the airway during sleep. Even though the use of PAP therapy has been shown to be effective in improving the symptoms and quality of life, many patients are intolerant of the treatment due to poor mask fit.
+            In this paper, our goal is to develop a computational approach for designing custom-fit PAP masks such that they can achieve better mask fit performance in terms of mask leakage and comfort. Our key observation is that a custom-fit PAP mask should fit a patient’s face in its deformed state instead of in its rest state since the PAP mask cushion undergoes notable deformation before reaching an equilibrium state during PAP therapy. To this end, we compute the equilibrium state of a mask cushion using the finite element method, and quantitatively measure the leakage and comfort of the mask cushion in this state. We further optimize the mask cushion geometry to minimize the two measures while ensuring that the cushion can be easily fabricated with molding. We demonstrate the effectiveness of our computational approach on a variety of face models and different types of PAP masks. Experimental results on real subjects show that our designed custom-fit PAP masks are able to achieve better mask fit performance than a generic PAP mask and custom-fit PAP masks designed by a state-of-the-art approach.</p>
+          </span>
+        </div>
+  
+        <br><br>
+  
+  
+  
+  
+        <!--------------------------------------------------------------------------------------------------->
+        <!--                                            Download                                          --->
+        <!--------------------------------------------------------------------------------------------------->
+  
+        <hr>
+  
+        <div align="justify">
+  
+          <h1>Download </h1>
+  
+          <!--Click the following link to download:-->
+          <span style="font-size: 13pt; line-height:32px">
+            <!--<a href="https://youtu.be/-qS8e4E_JHY">Presentation (XX-min)</a> <br>-->
+            <a href="https://sutd-cgl.github.io/supp/Publication/projects/2024-SMI-MaskDesign/download/2024-SMI-MaskDesign.pdf"> Paper PDF</a> (~49.1M) <br>
+            <a href="https://sutd-cgl.github.io/supp/Publication/projects/2024-SMI-MaskDesign/download/Supplementary.pdf">Supplementary PDF</a> (~3.0M) <br>
+            <!--<a href="https://github.com/SUTD-CGL/MaskDesign/tree/main/SourceCode">Source Code</a><br>-->
+            <!--<a href="https://youtu.be/tIww6wHm4YA">Presentation</a> (5-min)  <br>
+            <a href="https://youtu.be/H03v7MC9p-A">Presentation</a> (20-min)  <br>-->
+          </span>
+  
+        </div>
+  
+        <br><br>
+  
+  
+        <!-------------------------------------------- ------------------------------------------------------->
+        <!--                                             Video                                           --->
+        <!--------------------------------------------------------------------------------------------------->
+  
+        <hr>
+  
+        <h1>Video </h1>
+  
+        <div id="Div3" align="center">
+        <iframe width="720" height="480" src="https://www.youtube.com/embed/n82illJcfls" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>         
+        </div>
+  
+        <br><br><br>
+  
+        <!-- Video -->
+  
+  
+  
+  
+        <!--------------------------------------------------------------------------------------------------->
+        <!--                                            Results                                           --->
+        <!--------------------------------------------------------------------------------------------------->
+  
+        <hr>
+  
+        <div align="justify">
+  
+          <h1>Results </h1>
+  
+          <!--<br>
+          <div align="center"><img src="./High-levelPuzzle_files/result_performance.png" width="800" alt="Figure 2"></div>
+          <p class="figure"><strong>Figure 2:</strong>
+          Performance of our approach for generating K-piece level-L interlocking 5 x 5 x 5 Cubes with a single hole voxel. The computational time of each result is in miniuts. 
+          <br><br><br>-->
+  
+          <p></p><div align="center"><img src="./images/result_unnormal_face.png" width="900" alt="Figure 2"></div>
+          <p class="figure"><strong>Figure 2:</strong>
+            Our approach allows designing (b&c) a custom-fit PAP mask for (a) subjects with a variety of face shapes, achieving better mask fit performance than (e) the BMC F2 mask for each subject. (d) The contact forces of our custom-fit PAP masks are more evenly  distributed across the cushion trajectory curve than (f) those of the BMC F2 mask (i.e., less leakage), and the contact forces of our custom-fit PAP masks have smaller magnitudes than those of the BMC F2 mask (i.e., more comfortable). The color map visualizes contact pressure values in range [0, 1.5]. </p>
+          <br><br><br>
+  
+  
+          <div align="center"><img src="./images/result_face_expression.png" width="700" alt="Figure 3"></div>
+          <p class="figure"><strong>Figure 3:</strong>
+            Our approach allows designing a custom-fit mask for a subject with
+            three different expressions, achieving better mask fit performance than a
+            custom-fit mask designed only for expression #1 as well as the BMC F2 mask.
+            The color map visualizes contact pressure values in range [0, 1.5]. </p>
+          <br><br><br>
+  
+          <!--
+          <div align="center"><img src="./images/result_mask_extension.png" width="600" alt="Figure 4"></div>
+          <p class="figure"><strong>Figure 4:</strong>
+            Fig. 10: Our approach allows designing a personalized cushion for PAP masks
+            of different types: (top) a nasal mask , (middle) a full face mask, and (bottom)
+            a total face mask. From top to bottom, the color map maximum values are 0.7,
+            0.35, and 3.0, respectively. The color map minimum values are all 0. </p>        
+            <br><br><br>
+          -->
+  
+          <div align="center"><img src="./images/result_user_study_analysis.png" width="1000" alt="Figure 4"></div>
+          <p class="figure"><strong>Figure 4:</strong>
+            (a) A user study on two real subjects who wore the baseline custom-fit mask, BMC F2 mask, and our custom-fit mask, respectively. The user study setting is
+            shown on the right, where a subject is lying on the bed and wearing a PAP mask that is connected to a ResMed PAP machine. (b) Three cushions (designed for the
+            male subject) are fabricated with silicone and used in our user study. (c) Face models of the two subjects and the custom-fit mask designed for each of them using our
+            approach. (d) Air leakage statistics in our user study, reporting the number of subjects with no air leakage for each mask and each air pressure level. (e) Summary of
+            the four users’ answers to Q1 - Q3 in (f) our post-study questionnaire.</p>
+          <br><br><br>
+        </div>
+  
+        <br>
+  
+  
+        <!--------------------------------------------------------------------------------------------------->
+        <!--                                        Acknowledgments                                       --->
+        <!--------------------------------------------------------------------------------------------------->
+  
+        <hr>
+  
+        <div align="justify">
+  
+          <h1>Acknowledgments </h1>
+  
+          <!--<p class="text">-->
+            <span style="font-size: 13pt; line-height:22px">
+            <p>
+            We thank the reviewers for their valuable comments, Pengyun Qiu for participating in the user study, Thileepan Stalin and Pablo Valdivia y Alvarado for providing advice and facilities on fabricating mask interfaces with silicone. We would also like to thank the Changi General Hospital Office of Innovation and Clinical Trials Research Unit for their support in this project. 
+            </p>
+
+            <p>
+            This work was supported by the CGH – SUTD HealthTech Innovation Fund (CGH-SUTD-HTIF-2021-001), the MOE Academic Research Fund Tier 2 Grant (MOE-T2EP20222-0008), Singapore, and the National Natural Science Foundation of China (62025207).
+            </p>
+          </span>
+          <!--</p>-->
+          
+        </div>
+  
+        <br><br>
+  
+  
+  
+        <!--------------------------------------------------------------------------------------------------->
+        <!--                                        Acknowledgments                                       --->
+        <!--------------------------------------------------------------------------------------------------->
+  
+        <hr>
+  
+        <div align="justify">
+  
+          <h1>Bibtex </h1>
+          <span style="font-size: 13pt; line-height:30px">
+            @article{Lu-2024-MaskDesign, <br>
+              &nbsp;&nbsp;&nbsp; author &nbsp;&nbsp;&nbsp;= {Yukun Lu and Yuhang Wang and Peng Song and Hang Siang Wong and Yingjuan Mok and Ligang Liu}, <br>
+              &nbsp;&nbsp;&nbsp; title &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = { Computational Design of Custom-Fit PAP Masks }, <br>
+              &nbsp;&nbsp;&nbsp; journal &nbsp; = {Computers & Graphics (Proc. of Shape Modeling International)}, <br>
+              &nbsp;&nbsp;&nbsp; year &nbsp;&nbsp;&nbsp;&nbsp; = {2024} }<br>
+          </span>
+        </div>
+  
+        <br><br><br><br>
+  
+  
+        <!----------------------------CopyRight---------------------------->
+  
+  
+  
+        
+      </blockquote>
+    </font>
+  
+
+</body><chatgpt-sidebar-popups data-gpts-theme="light"></chatgpt-sidebar-popups><chatgpt-sidebar data-gpts-theme="light"></chatgpt-sidebar><chatgpt-sidebar-popups data-gpts-theme="light"></chatgpt-sidebar-popups></html>
