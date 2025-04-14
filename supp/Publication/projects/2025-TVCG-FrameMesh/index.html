@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<!-- saved from url=(0085)https://sutd-cgl.github.io/supp/Publication/projects/2021-SIGAsia-3DCamMech/index.htm -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="./High-levelPuzzle_files/styles.css">
+  <title>FrameMesh</title>
+  
+  <script type="text/javascript">
+    google.load("jquery", "1.3.2");
+  </script>
+  <style type="text/css">
+    body {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1100px;
+    }
+      
+    h1 {
+    font-weight: 300;
+    }
+      
+    a:link {
+      text-decoration: none;
+      color: 6464FF
+    }
+
+    a:active {
+      text-decoration: blink
+    }
+
+    a:hover {
+      text-decoration: underline;
+      color: 6464FF
+    }
+
+    a:visited {
+      text-decoration: none;
+      color: 551A8B
+    }
+  </style>
+
+
+  <!--------------------------------------------------------------------------------------------------->
+  <!--                                       Header and Photo                                       --->
+  <!--------------------------------------------------------------------------------------------------->
+
+</head><body data-gr-c-s-loaded="true">
+  <font size="3">
+    <blockquote>
+      <p>
+      </p>
+      <center>
+        <table border="0">
+          <tbody>
+            <tr>
+              <td width="30"></td>
+              <td width="1200">
+                <center>
+
+                  <!--Header-->
+                  <br><br><br>
+                  <h1><span style="font-size: 23pt">Modeling Wireframe Meshes with Discrete Equivalence Classes</span></h1>
+                  <br>
+
+                  <p class="authors">
+                    <span style="font-size: 15pt">
+                      Pengyun Qiu*<sup>1</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      <a href="https://linsanity81.github.io/">Rulin Chen</a>*<sup>1</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      <a href="https://songpenghit.github.io/">Peng Song</a><sup>1</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      <a href="https://personal.ntu.edu.sg/yhe/">Ying He</a><sup>2</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                      <br><br>
+                      <sup>1</sup> <a href="https://sutd.edu.sg/">Singapore University of Technology and Design</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      <sup>2</sup> <a href="https://www.ntu.edu.sg">Nanyang Technological University</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      
+                      <br><br>
+                      </span></p><h3 class=""><span style="font-weight: normal;"><a href="https://ieeexplore.ieee.org/document/9663067">IEEE Transactions on Visualization and Computer Graphics</a>, regular paper (* joint 1st authors)</span></h3>
+                  
+                  <p class="authors">&nbsp;</p>
+
+
+              </center></td>
+            </tr>
+          </tbody>
+        </table>
+      </center>
+      <p></p>
+
+
+      <!-- Figure 1: Overview-->
+      <br>
+      <div align="center">
+        <img src="./images/teaser.png" width="1060" alt="Figure 1">
+      </div>
+      <div align="justify" width:="" 1200px="">
+      <p class="figure"><strong>Figure 1:</strong> 
+      An IGLOO surface with an original mesh containing 196 vertices and 364 edges optimized to 14 classes of vertices and 30 classes of edges using our approach. 
+      Left: a rendering of our optimized wireframe mesh, where vertices and edges in the same class are rendered with the same color, respectively.
+      Middle: fabricating the wireframe mesh with 3D printed nodes and precision-cut wooden rods. 
+      Right: (top) nodes and rods of the same class are clustered together, and (bottom) a close-up view of the assembled nodes and rods.
+      </p>
+      </div>
+
+      <!--------------------------------------------------------------------------------------------------->
+      <!--                                            Abstract                                          --->
+      <!--------------------------------------------------------------------------------------------------->
+      
+      <br><hr><br>
+      <div align="justify" width:="" 1200px="">
+
+        <h1>Abstract</h1>
+
+        <span style="font-size: 13pt">
+          <!--<ul>-->
+          <p> 
+            We study a problem of modeling wireframe meshes where the vertices and edges fall into a set of discrete equivalence classes, respectively.	
+            This problem is motivated by the need of fabricating large wireframe structures at lower cost and faster speed since both nodes (thickened vertices) and rods (thickened edges) can be mass-produced.
+            Given a 3D shape represented as a wireframe mesh, our goal is to compute a set of template vertices and a set of template edges, whose instances can be used to produce a fabricable wireframe mesh that approximates the input shape. 
+            To achieve this goal, we propose a computational approach that generates the template vertices and template edges by iteratively clustering and optimizing the mesh vertices and edges.
+            At the clustering stage, we cluster mesh vertices and edges according to their shape and length, respectively.
+            At the optimization stage, we first locally optimize the mesh to reduce the number of clusters of vertices and/or edges, and then globally optimize the mesh to reduce the intra-cluster variance for vertices and edges, while facilitating fabricability of the wireframe mesh.
+            We demonstrate that our approach is able to model wireframe meshes with various shapes and topologies, compare it with three state-of-the-art approaches to show its superiority, and validate fabricability of our results by making three physical prototypes.
+        </span>
+      </div>
+
+      <br><br>
+
+
+
+
+      <!--------------------------------------------------------------------------------------------------->
+      <!--                                            Download                                          --->
+      <!--------------------------------------------------------------------------------------------------->
+
+      <hr>
+
+      <div align="justify">
+
+        <h1>Download </h1>
+
+        <!--Click the following link to download:-->
+        <span style="font-size: 13pt; line-height:32px">
+          <!--<a href="https://youtu.be/-qS8e4E_JHY">Presentation (XX-min)</a> <br>-->
+          <a href="./download/2025-TVCG-FrameMesh.pdf"> Paper PDF</a> (~49.6M) <br>
+          <a href="./download/supplementary_doc.pdf">Supplementary PDF</a> (~0.2M) <br>
+          <a href="./download/supplementary_data.zip">Supplementary Data</a> (~32.8M) <br>
+          <!--<a href="TODO">Source Code</a><br>-->
+          <!--<a href="https://youtu.be/tIww6wHm4YA">Presentation</a> (5-min)  <br>
+          <a href="https://youtu.be/H03v7MC9p-A">Presentation</a> (20-min)  <br>-->
+        </span>
+
+      </div>
+
+      <br><br>
+
+
+      <!-------------------------------------------- ------------------------------------------------------->
+      <!--                                             Video                                           --->
+      <!--------------------------------------------------------------------------------------------------->
+
+      <hr>
+
+      <h1>Video </h1>
+
+      <div id="Div3" align="center">
+      <iframe width="720" height="480" src="https://www.youtube.com/embed/_aGyoUJTtqU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+      </div>
+
+      <br><br><br>
+
+      <!-- Video -->
+
+
+
+
+      <!--------------------------------------------------------------------------------------------------->
+      <!--                                            Results                                           --->
+      <!--------------------------------------------------------------------------------------------------->
+
+      <hr>
+
+      <div align="justify">
+
+        <h1>Results </h1>
+
+
+        </p><div align="center"><img src="./images/result_shape.png" width="1060" alt="Figure 3"></div>
+        <p class="figure"><strong>Figure 2:</strong>
+        Our approach allows modeling wireframe meshes with discrete equivalence classes for surfaces with various shapes and topologies. 
+        The input surface is shown beside each result.
+        <br><br><br>
+
+
+        <div align="center"><img src="./images/result_compare_Liu.png" width="1060" alt="Figure 5"></div>
+        <p class="figure"><strong>Figure 3:</strong>
+        Comparing [Liu et al. 2023] with our approach (Ours) as well as a variation of our approach (Ours_vertex) to model a quad mesh with discrete equivalence classes of vertices.        
+        This comparison result shows that clustering-and-optimizing mesh vertices and edges simultaneously can help to reduce the number (Kv) of distinct vertices.
+        <br><br><br>
+
+        <div align="center"><img src="./images/result_compare_Xiong.png" width="660" alt="Figure 4"></div>
+        <p class="figure"><strong>Figure 4:</strong>
+        Comparing [Xiong et al. 2022] with our approach to model three architectural surfaces with discrete equivalence classes of vertices, where our approach generates a smaller number (Kv) of vertex classes for each surface.  
+        This comparison result shows the effectiveness of our local-global optimization scheme to reduce the number of distinct vertices.      
+        <br><br><br>
+
+        <div align="center"><img src="./images/result_fabrication.png" width="720" alt="Figure 5"></div>
+        <p class="figure"><strong>Figure 5:</strong>
+        We fabricate three of our modeled wireframe meshes with 3D printed nodes and precision-cut rods. 
+        Fabricated nodes and rods of the same class are clustered together on the left. 
+        A mug is put beside each structure to show its real scale.</p>
+        <br><br><br>
+      </div>
+
+      <br>
+
+
+      <!--------------------------------------------------------------------------------------------------->
+      <!--                                        Acknowledgments                                       --->
+      <!--------------------------------------------------------------------------------------------------->
+
+      <hr>
+
+      <div align="justify">
+
+        <h1>Acknowledgments </h1>
+
+        <!--<p class="text">-->
+          <span style="font-size: 13pt; line-height:22px">
+           <p>The authors would like to thank Yi Min Xie for sharing the quad mesh in Figure 16, Weidan Xiong for sharing the three triangle meshes in Figure 17, and Leif Kobbelt for providing information about the Zometool model in Figure 18. 
+           This work was supported by the Singapore MOE AcRF Tier 2 Grant (MOE-T2EP20123-0016) and the Singapore MOE AcRF Tier 1 Grant (RT19/22).</p>
+        </span>
+        <!--</p>-->
+        
+      </div>
+
+      <br><br>
+
+
+
+      <!--------------------------------------------------------------------------------------------------->
+      <!--                                        Acknowledgments                                       --->
+      <!--------------------------------------------------------------------------------------------------->
+
+      <hr>
+
+      <div align="justify">
+
+        <h1>Bibtex </h1>
+        <span style="font-size: 13pt; line-height:30px">
+          @article {Qiu-2025-FrameMesh, <br>
+          &nbsp;&nbsp;&nbsp; author &nbsp; = {Pengyun Qiu and Rulin Chen and Peng Song and and Ying He}, <br>
+          &nbsp;&nbsp;&nbsp; title &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = {Modeling Wireframe Meshes with Discrete Equivalence Classes}, <br>
+          &nbsp;&nbsp;&nbsp; journal &nbsp; = {IEEE Transactions on Visualization and Computer Graphics}, <br>
+          <!-- &nbsp;&nbsp;&nbsp; volume = {42}, <br> -->
+          <!-- &nbsp;&nbsp;&nbsp; number = {4}, <br> -->
+          &nbsp;&nbsp;&nbsp; year &nbsp;&nbsp;&nbsp;&nbsp; = {2025}} <br>
+
+        </span>
+      </div>
+
+      <br><br><br><br>
+
+
+      <!----------------------------CopyRight---------------------------->
+
+
+
+      
+    </blockquote>
+  </font>
+
+
+</body></html>
