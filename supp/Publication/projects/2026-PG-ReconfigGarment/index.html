@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<!-- saved from url=(0083)https://sutd-cgl.github.io/supp/Publication/projects/2025-TVCG-FrameMesh/index.html -->
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>ReconfigurableGarment</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script type="text/javascript">
+    google.load("jquery", "1.3.2");
+  </script>
+  <style type="text/css">
+    body {
+      font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+      font-weight: 300;
+      font-size: 18px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 1100px;
+    }
+
+    h1 {
+      font-weight: 300;
+    }
+
+    a:link {
+      text-decoration: none;
+      color: 6464FF
+    }
+
+    a:active {
+      text-decoration: blink
+    }
+
+    a:hover {
+      text-decoration: underline;
+      color: 6464FF
+    }
+
+    a:visited {
+      text-decoration: none;
+      color: 551A8B
+    }
+  </style>
+
+
+  <!--------------------------------------------------------------------------------------------------->
+  <!--                                       Header and Photo                                       --->
+  <!--------------------------------------------------------------------------------------------------->
+
+</head>
+
+<body data-gr-c-s-loaded="true" data-new-gr-c-s-check-loaded="14.1248.0" data-gr-ext-installed="">
+  <font size="3">
+    <blockquote>
+      <p>
+      </p>
+      <center>
+        <table border="0">
+          <tbody>
+            <tr>
+              <td width="30"></td>
+              <td width="1200">
+                <center style="background-color: transparent;">
+
+                  <!--Header-->
+                  <br><br><br>
+                  <h1><span style="font-size: 23pt; background-color: transparent;">Computational Reconfigurable
+                      Garments</span></h1>
+                  <br>
+
+                  <p class="authors">
+                    <span style="font-size: 15pt">
+                      Yixuan He<sup>1</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      Haoyu Tang<sup>1</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      <a href="https://kchenkan.github.io">Kan Chen</a><sup>2</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      <a href="https://songpenghit.github.io/">Peng
+                        Song</a><sup>1</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                      <br><br>
+                      <sup>1</sup> <a href="https://sutd.edu.sg/">SUTD</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      <sup>2</sup> <a href="https://www.singaporetech.edu.sg">SIT</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                      <br><br>
+                    </span>
+                  </p>
+                  <h3 class=""><span style="font-weight: normal;"><a
+                        href="https://pacificgraphics2026.github.io">Pacific Graphics 2026</a>, Conference Paper </span>
+                  </h3>
+
+                  <p class="authors" style="background-color: transparent;">&nbsp;</p>
+
+
+                </center>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </center>
+      <p></p>
+
+
+      <!-- Figure 1: Overview-->
+      <br>
+      <div align="center">
+        <img src="./images/teaser.png" width="1060" alt="Figure 1">
+      </div>
+      <div align="justify" width:="" 1200px="">
+        <p class="figure"><strong>Figure 1:</strong>
+          We present a computational approach for designing reconfigurable garments, which have two different forms (top
+          left) sewn from a common set of fabric panels (bottom left). Our designed reconfigurable garment (right) is
+          fabricable and wearable in the real world.
+        </p>
+      </div>
+
+      <!--------------------------------------------------------------------------------------------------->
+      <!--                                            Abstract                                          --->
+      <!--------------------------------------------------------------------------------------------------->
+
+      <br>
+      <hr><br>
+      <div align="justify" width:="" 1200px="">
+
+        <h1>Abstract</h1>
+
+        <br>
+
+        <span style="font-size: 13pt">
+          <!--<ul>-->
+          <p>
+            Reconfigurable garments consist of a common set of 2D fabric panels that can be rearranged and sewn into
+            different 3D
+            garment forms, promoting fabric utilization and extending clothing lifespans. However, designing
+            reconfigurable garments is
+            challenging since it is difficult to identify reusable regions across different garment forms. In this work,
+            we present a computa-
+            tional approach for designing reconfigurable garments, taking a pair of target 3D garment shapes as the
+            input. Our key idea is
+            to first identify shareable 3D regions across the target garment shapes and then represent them into a
+            common set of 2D fabric
+            panels. To this end, we first decompose the input garment shapes into low-distortion patches and construct
+            candidate regions
+            by grouping neighboring patches. We then propose a seam-aware distance metric to measure compatibility
+            between candidate
+            regions flattened on 2D, and formulate reusable region discovery as a combinatorial optimization problem
+            solved through in-
+            teger programming. Lastly, we represent each reusable region pair using a simple polygon and optimize its
+            shape to provide
+            a compact approximation that can be shared across the garment forms. We demonstrate that our approach is
+            able to design
+            reconfigurable garments with different types and forms, and validate the usability of these garments via
+            full-scale fabrication
+            and wearer try-on.
+          </p>
+        </span>
+      </div>
+
+      <br><br>
+
+
+
+
+      <!--------------------------------------------------------------------------------------------------->
+      <!--                                            Download                                          --->
+      <!--------------------------------------------------------------------------------------------------->
+
+      <hr>
+
+      <div align="justify">
+
+        <h1>Download </h1>
+
+        <br>
+
+        <!--Click the following link to download:-->
+        <span style="font-size: 13pt; line-height:32px">
+          <a href="https://sutd-cgl.github.io/supp/Publication/papers/2026-PG-ReconfigGarment.pdf"> Paper PDF</a>(~2.2M) <BR>
+          <a href="https://github.com/abcqmars/ReconfigGarment">Source Code</a><br>
+        </span>
+
+      </div>
+      <br><br>
+
+
+
+      <!-------------------------------------------- ------------------------------------------------------->
+      <!--                                             Pipeline                                           --->
+      <!--------------------------------------------------------------------------------------------------->
+
+      <hr>
+
+      <div align="justify">
+
+        <h1>Pipeline </h1>
+
+        <br>
+
+
+        <div align="center"><img src="./images/Pipeline.png" width="1000" alt="Figure 2"></div>
+        <p class="figure"><strong>Figure 2:</strong>
+          Figure 2: Overview of our computational approach. (a) Given a pair of input garment meshes, (b) we first
+          generate a fine-grained patch
+          decomposition for each garment. (c) Candidate regions are obtained by merging neighboring patches. Then we
+          identified reusable region
+          correspondences across garments through combinatorial optimization. (d) For each matched region pair, we model
+          and optimize a shared
+          polygonal panel to represent both regions. (e) The resulting shared panels, together with garment-specific
+          assembly configurations, can be
+          used to reconstruct both target garments.
+          </p>
+      </div>
+
+      <br><br>
+
+
+      <!--------------------------------------------------------------------------------------------------->
+      <!--                                        Interactive Results                                       --->
+      <!--------------------------------------------------------------------------------------------------->
+
+
+      <hr>
+
+      <h1>Interactive Results</h1>
+      <br>
+      <!-- <body> -->
+      <main>
+        <!-- <section class="browser-shell" aria-labelledby="results-title"> -->
+        <div class="results-heading">
+          <!-- <h2 id="results-title">Interactive Results</h2> -->
+          <p>Each case shows the two original input garments, the corresponding reconfigurable garments, and the shared
+            2D panels.</p>
+          <div class="case-list" id="case-list"></div>
+        </div>
+
+        <section class="case-stage" aria-live="polite">
+          <div class="case-toolbar">
+            <div>
+              <p id="case-index">Case 01</p>
+              <h3 id="case-title">Dress and Skirt</h3>
+            </div>
+            <div class="toolbar-actions" aria-label="Viewer controls">
+              <button type="button" class="icon-button" id="toggle-rotate" aria-pressed="false"
+                title="Toggle auto rotate">Rotate</button>
+              <button type="button" class="icon-button" id="reset-view" title="Reset view">Reset</button>
+            </div>
+          </div>
+
+          <div class="result-grid" id="result-grid"></div>
+          <p class="notes"><strong>Notes:</strong> Due to rendering differences, the colors of the 3D reconfigurable
+            garments may differ from the colors of the 2D panels.</p>
+        </section>
+        <!-- </section> -->
+      </main>
+
+      <script src="assets/js/cases.js?v=3"></script>
+      <script src="assets/js/sample_models.js?v=3"></script>
+      <script src="assets/js/app.js?v=3"></script>
+
+
+      <!--------------------------------------------------------------------------------------------------->
+      <!--                                            Acknowledgments                                           --->
+      <!--------------------------------------------------------------------------------------------------->
+
+      <hr>
+      <div align="justify">
+
+        <h1>Acknowledgments </h1>
+
+        <br>
+
+        <p class="text">
+            <span style="font-size: 13pt; line-height:22px">
+              We thank the reviewers for their valuable comments. 
+              We also thank Xinyue Hu for serving as the fitting model, and Fei Wang
+              and Chunjie Gao for their assistance with sewing. 
+              This work was supported by the Singapore MOE AcRF Tier 2 Grants (MOE-T2EP20123-0016).
+            </span>
+        </p>
+
+      </div>
+
+      <br><br>
+
+
+
+      <!--------------------------------------------------------------------------------------------------->
+      <!--                                        Acknowledgments                                       --->
+      <!--------------------------------------------------------------------------------------------------->
+      <!-- 
+      <hr>
+
+      <div align="justify">
+
+        <h1>Bibtex </h1>
+        <span style="font-size: 13pt; line-height:30px">
+          @article {He-2026-ReconfigGarment, <br>
+          &nbsp;&nbsp;&nbsp; author &nbsp; = {Yixuan He and Haoyu Tang and Kan Chen and and Peng Song}, <br>
+          &nbsp;&nbsp;&nbsp; title &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = {Computational Reconfigurable Garments}, <br>
+          &nbsp;&nbsp;&nbsp; journal &nbsp; = {Computer Graphics Forum (Pacific Graphics)}, <br>
+          &nbsp;&nbsp;&nbsp; volume = {44}, <br>
+          &nbsp;&nbsp;&nbsp; number = {7}, <br>
+          &nbsp;&nbsp;&nbsp; year &nbsp;&nbsp;&nbsp;&nbsp; = {2026}} <br>
+
+        </span>
+      </div> -->
+
+      <br><br><br><br>
+
+
+      <!----------------------------CopyRight---------------------------->
+
+
+
+
+    </blockquote>
+  </font>
+
+
+</body>
+
+</html>
